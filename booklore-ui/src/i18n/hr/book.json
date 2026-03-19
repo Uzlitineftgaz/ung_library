@@ -116,7 +116,7 @@
             "readStatusFailedSummary": "Ažuriranje nije uspjelo",
             "readStatusFailedDetail": "Ažuriranje statusa čitanja nije uspjelo.",
             "progressResetSummary": "Napredak vraćen",
-            "progressResetBookloreDetail": "Booklore napredak čitanja je vraćen.",
+            "progressResetBookloreDetail": "Ung Library  napredak čitanja je vraćen.",
             "progressResetKOReaderDetail": "KOReader napredak čitanja je vraćen.",
             "progressResetFailedSummary": "Neuspjelo",
             "progressResetBookloreFailedDetail": "Vraćanje Booklore napretka nije uspjelo.",
@@ -242,7 +242,7 @@
             "unshelveSuccessDetail": "Knjige uklonjene sa svih polica",
             "unshelveFailedDetail": "Ažuriranje polica knjiga nije uspjelo",
             "progressResetSummary": "Napredak vraćen",
-            "bookloreProgressResetDetail": "Booklore napredak čitanja je vraćen.",
+            "bookloreProgressResetDetail": "Ung Library  napredak čitanja je vraćen.",
             "koreaderProgressResetDetail": "KOReader napredak čitanja je vraćen.",
             "failedSummary": "Neuspjelo",
             "progressResetFailedDetail": "Vraćanje napretka nije uspjelo."

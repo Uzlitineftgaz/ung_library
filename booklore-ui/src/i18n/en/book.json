@@ -116,7 +116,7 @@
       "readStatusFailedSummary": "Update Failed",
       "readStatusFailedDetail": "Could not update read status.",
       "progressResetSummary": "Progress Reset",
-      "progressResetBookloreDetail": "Booklore reading progress has been reset.",
+      "progressResetBookloreDetail": "Ung Library  reading progress has been reset.",
       "progressResetKOReaderDetail": "KOReader reading progress has been reset.",
       "progressResetFailedSummary": "Failed",
       "progressResetBookloreFailedDetail": "Could not reset Booklore progress.",
@@ -242,7 +242,7 @@
       "unshelveSuccessDetail": "Books removed from all shelves",
       "unshelveFailedDetail": "Failed to update books shelves",
       "progressResetSummary": "Progress Reset",
-      "bookloreProgressResetDetail": "Booklore reading progress has been reset.",
+      "bookloreProgressResetDetail": "Ung Library  reading progress has been reset.",
       "koreaderProgressResetDetail": "KOReader reading progress has been reset.",
       "failedSummary": "Failed",
       "progressResetFailedDetail": "Could not reset progress."

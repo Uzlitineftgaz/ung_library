@@ -11,6 +11,7 @@ import {filter, take} from 'rxjs/operators';
 import {AppSettingsService, PublicAppSettings} from '../../service/app-settings.service';
 import {TranslocoDirective, TranslocoService} from '@jsverse/transloco';
 import {OidcService} from '../../../core/security/oidc.service';
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-login',
@@ -20,7 +21,8 @@ import {OidcService} from '../../../core/security/oidc.service';
     Button,
     Message,
     InputText,
-    TranslocoDirective
+    TranslocoDirective,
+    NgOptimizedImage
   ],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']

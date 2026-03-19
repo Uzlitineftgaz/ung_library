@@ -92,7 +92,7 @@
       "moreActions": "Ko'proq harakatlar",
       "organizeFile": "Faylni tartibga solish",
       "readStatus": "O'qish holati",
-      "resetBookloreProgress": "Booklore progressini tiklash",
+      "resetBookloreProgress": "Ung Library  progressini tiklash",
       "resetKOReaderProgress": "KOReader progressini tiklash",
       "book": "Kitob",
       "loading": "Yuklanmoqda..."
@@ -116,10 +116,10 @@
       "readStatusFailedSummary": "Yangilanish muvaffaqiyatsiz",
       "readStatusFailedDetail": "O'qish holatini yangilab bo'lmadi.",
       "progressResetSummary": "Progress tiklandi",
-      "progressResetBookloreDetail": "Booklore o'qish progressi tiklandi.",
+      "progressResetBookloreDetail": "Ung Library  o'qish progressi tiklandi.",
       "progressResetKOReaderDetail": "KOReader o'qish progressi tiklandi.",
       "progressResetFailedSummary": "Muvaffaqiyatsiz",
-      "progressResetBookloreFailedDetail": "Booklore progressini tiklab bo'lmadi.",
+      "progressResetBookloreFailedDetail": "Ung Library  progressini tiklab bo'lmadi.",
       "progressResetKOReaderFailedDetail": "KOReader progressini tiklab bo'lmadi.",
       "coverRegenSuccessSummary": "Muvaffaqiyat",
       "coverRegenSuccessDetail": "Muqova qayta yaratish boshlandi",
@@ -201,7 +201,7 @@
       "setContentRating": "Kontent reytingini belgilash",
       "clearContentRating": "Kontent reytingini tozalash",
       "removeFromAllShelves": "Barcha javonlardan olib tashlash",
-      "resetBookloreProgress": "Booklore progressini tiklash",
+      "resetBookloreProgress": "Ung Library  progressini tiklash",
       "resetKOReaderProgress": "KOReader progressini tiklash"
     },
     "confirm": {
@@ -242,7 +242,7 @@
       "unshelveSuccessDetail": "Kitoblar barcha javonlardan olib tashlandi",
       "unshelveFailedDetail": "Kitob javonlarini yangilab bo'lmadi",
       "progressResetSummary": "Progress tiklandi",
-      "bookloreProgressResetDetail": "Booklore o'qish progressi tiklandi.",
+      "bookloreProgressResetDetail": "Ung Library  o'qish progressi tiklandi.",
       "koreaderProgressResetDetail": "KOReader o'qish progressi tiklandi.",
       "failedSummary": "Muvaffaqiyatsiz",
       "progressResetFailedDetail": "Progressni tiklab bo'lmadi."

@@ -113,7 +113,7 @@
             "readStatusFailedSummary": "更新失败",
             "readStatusFailedDetail": "无法更新阅读状态。",
             "progressResetSummary": "进度已重置",
-            "progressResetBookloreDetail": "Booklore 阅读进度已重置。",
+            "progressResetBookloreDetail": "Ung Library  阅读进度已重置。",
             "progressResetKOReaderDetail": "KOReader 阅读进度已重置。",
             "progressResetFailedSummary": "失败",
             "progressResetBookloreFailedDetail": "无法重置 Booklore 进度。",
@@ -239,7 +239,7 @@
             "unshelveSuccessDetail": "图书已从所有书架移除",
             "unshelveFailedDetail": "更新图书书架失败",
             "progressResetSummary": "进度已重置",
-            "bookloreProgressResetDetail": "Booklore 阅读进度已重置。",
+            "bookloreProgressResetDetail": "Ung Library  阅读进度已重置。",
             "koreaderProgressResetDetail": "KOReader 阅读进度已重置。",
             "failedSummary": "失败",
             "progressResetFailedDetail": "无法重置进度。"

@@ -93,16 +93,16 @@
     "defaultMessage": "Yaqinda bildirishnomalar yo'q..."
   },
   "supportDialog": {
-    "title": "BookLore ni qo'llab-quvvatlash",
+    "title": "Ung Library  ni qo'llab-quvvatlash",
     "subtitle": "Kitoblarni sevuvchi yolg'iz dasturchidan",
-    "intro": "BookLore bitta dasturchi tomonidan qurilgan va saqlanadi, u kitoblarni chin dildan sevadi. Agar u kutubxonangizni tashkil etishni biroz yoqimliroq qilgan bo'lsa, loyihani davom ettirish va uni qo'llab-quvvatlash uchun bir nechta usullar mavjud.",
+    "intro": "Ung Library  bitta dasturchi tomonidan qurilgan va saqlanadi, u kitoblarni chin dildan sevadi. Agar u kutubxonangizni tashkil etishni biroz yoqimliroq qilgan bo'lsa, loyihani davom ettirish va uni qo'llab-quvvatlash uchun bir nechta usullar mavjud.",
     "starTitle": "GitHub da yulduz qo'yish",
     "starDesc": "Yulduz juda uzoqqa boradi. U yangi odamlarga BookLore ni topishga yordam beradi va meni motivatsiya qiladi.",
     "collectiveTitle": "Open Collective",
     "collectiveDesc": "Hostingni qoplashga yordam beruvchi va rivojlanishni barqaror qiluvchi takrorlanuvchi qo'llab-quvvatlash.",
     "kofiTitle": "Menga kofe sotib oling",
     "kofiDesc": "Kechki kod yozish seanslarini yoqish uchun bir martalik maslahat. Har bir qism qadrlanadi!",
-    "closing": "BookLore hamjamiyatining bir qismi bo'lganingiz uchun rahmat."
+    "closing": "Ung Library  hamjamiyatining bir qismi bo'lganingiz uchun rahmat."
   },
   "metadataProgress": {
     "taskStalled": "Vazifa to'xtab qoldi yoki backend mavjud emas",
@@ -136,7 +136,7 @@
     "saveErrorDetail": "Sozlamalarni saqlashda xatolik yuz berdi."
   },
   "setup": {
-    "title": "Booklore ga xush kelibsiz",
+    "title": "Ung Library  ga xush kelibsiz",
     "subtitle": "Boshlash uchun dastlabki admin hisobingizni sozlang",
     "usernameLabel": "Foydalanuvchi nomi",
     "usernamePlaceholder": "Foydalanuvchi nomini tanlang",

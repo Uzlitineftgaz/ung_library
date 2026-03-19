@@ -7,7 +7,7 @@ import {TooltipModule} from 'primeng/tooltip';
 import {FormsModule} from '@angular/forms';
 import {InputTextModule} from 'primeng/inputtext';
 import {BookSearcherComponent} from '../../../../features/book/components/book-searcher/book-searcher.component';
-import {AsyncPipe, NgClass, NgStyle} from '@angular/common';
+import {AsyncPipe, NgClass, NgOptimizedImage, NgStyle} from '@angular/common';
 import {NotificationEventService} from '../../../websocket/notification-event.service';
 import {Button} from 'primeng/button';
 import {StyleClass} from 'primeng/styleclass';
@@ -52,6 +52,7 @@ import {SUPPORT_ANIMATION_KEY} from '../../../../features/settings/global-prefer
     NgStyle,
     Menu,
     TranslocoDirective,
+    NgOptimizedImage,
   ],
 })
 export class AppTopBarComponent implements OnDestroy {

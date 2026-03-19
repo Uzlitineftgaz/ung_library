@@ -116,7 +116,7 @@
             "readStatusFailedSummary": "Posodobitev ni uspela",
             "readStatusFailedDetail": "Ni bilo mogoče posodobiti statusa branja.",
             "progressResetSummary": "Napredek ponastavljen",
-            "progressResetBookloreDetail": "Booklore napredek branja je bil ponastavljen.",
+            "progressResetBookloreDetail": "Ung Library  napredek branja je bil ponastavljen.",
             "progressResetKOReaderDetail": "KOReader napredek branja je bil ponastavljen.",
             "progressResetFailedSummary": "Napaka",
             "progressResetBookloreFailedDetail": "Ni bilo mogoče ponastaviti Booklore napredka.",
@@ -242,7 +242,7 @@
             "unshelveSuccessDetail": "Knjige so odstranjene z vseh polic",
             "unshelveFailedDetail": "Napaka pri posodabljanju polic",
             "progressResetSummary": "Napredek ponastavljen",
-            "bookloreProgressResetDetail": "Booklore napredek branja je bil ponastavljen.",
+            "bookloreProgressResetDetail": "Ung Library  napredek branja je bil ponastavljen.",
             "koreaderProgressResetDetail": "KOReader napredek branja je bil ponastavljen.",
             "failedSummary": "Napaka",
             "progressResetFailedDetail": "Ni bilo mogoče ponastaviti napredka."

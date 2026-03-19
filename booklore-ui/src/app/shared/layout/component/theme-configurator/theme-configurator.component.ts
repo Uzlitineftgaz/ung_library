@@ -50,9 +50,9 @@ export class ThemeConfiguratorComponent {
     return colorPalette?.[500] ?? name;
   });
 
-  private readonly _faviconSyncEffect = effect(() => {
-    this.faviconService.updateFavicon(this.faviconColor());
-  });
+  // private readonly _faviconSyncEffect = effect(() => {
+  //   this.faviconService.updateFavicon(this.faviconColor());
+  // });
 
   readonly primaryColors = computed<Palette[]>(() => {
     const presetPalette = (Aura.primitive ?? {}) as Record<string, ColorPalette>;
