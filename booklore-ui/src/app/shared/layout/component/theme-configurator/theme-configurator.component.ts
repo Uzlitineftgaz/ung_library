@@ -57,6 +57,7 @@ export class ThemeConfiguratorComponent {
   readonly primaryColors = computed<Palette[]>(() => {
     const presetPalette = (Aura.primitive ?? {}) as Record<string, ColorPalette>;
     const colors = [
+      'ungBlue',
       'emerald', 'green', 'lime', 'orange', 'amber', 'yellow',
       'teal', 'cyan', 'sky', 'blue', 'indigo', 'violet',
       'purple', 'fuchsia', 'pink', 'rose', 'red',

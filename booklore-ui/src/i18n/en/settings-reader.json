@@ -1,4 +1,4 @@
-{
+﻿{
   "title": "Reader Preferences",
   "description": "Configure reading experience settings for your library. Set default preferences that serve as overrides for individual books, or allow each book to maintain its own custom settings for PDF, EPUB, FB2, MOBI, AZW3, and CBX formats.",
   "appMode": {

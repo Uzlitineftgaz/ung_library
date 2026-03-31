@@ -1,6 +1,7 @@
-{
+﻿{
     "creator": {
         "titleNew": "Nova Biblioteca",
+    "titleNewSub": "New Sub-Library",
         "titleEdit": "Editar Biblioteca",
         "subtitle": "Configure sua coleção de livros",
         "libraryDetails": "Detalhes da Biblioteca",

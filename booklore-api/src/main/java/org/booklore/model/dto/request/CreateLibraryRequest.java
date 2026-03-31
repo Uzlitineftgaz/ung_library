@@ -24,6 +24,9 @@ public class CreateLibraryRequest {
     @NotBlank(message = "Library name must not be empty.")
     private String name;
 
+    private Long parentId;
+    private String description;
+
     private String icon;
     private IconType iconType;
 

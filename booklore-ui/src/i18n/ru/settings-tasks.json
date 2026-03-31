@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "Менеджер системных задач",
     "description": "Управляйте автоматизированными системными задачами для обслуживания библиотеки, обновления метаданных и очистки кэша. Планируйте повторяющиеся операции с помощью <a href=\"https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"cron-link\">Spring cron-выражений</a>.",
     "systemTasks": {

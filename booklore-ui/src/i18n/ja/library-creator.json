@@ -1,6 +1,7 @@
-{
+﻿{
     "creator": {
         "titleNew": "新規ライブラリ",
+    "titleNewSub": "New Sub-Library",
         "titleEdit": "ライブラリを編集",
         "subtitle": "ブックコレクションを設定",
         "libraryDetails": "ライブラリ詳細",

@@ -1,4 +1,4 @@
-{
+﻿{
     "bulkEdit": {
         "infoBanner": "Selecteer welke velden u wilt toepassen op <strong>{{ fileCount }}</strong> geselecteerde bestand(en). Alleen aangevinkte velden worden bijgewerkt.",
         "textFieldsTitle": "Tekstvelden",

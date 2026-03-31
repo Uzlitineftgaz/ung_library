@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "Configuración de correo electrónico",
     "description": "Configura los ajustes de correo para enviar libros directamente a tus dispositivos o destinatarios. Configura proveedores de correo (como Gmail, Outlook o servidores SMTP personalizados) y gestiona las direcciones de correo de los destinatarios.",
     "accessRestricted": "Acceso restringido",

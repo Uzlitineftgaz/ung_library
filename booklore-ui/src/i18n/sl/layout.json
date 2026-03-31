@@ -1,4 +1,4 @@
-{
+﻿{
     "topbar": {
         "bookdrop": "Bookdrop",
         "createNewLibrary": "Ustvari novo knjižnico",
@@ -10,7 +10,7 @@
         "profile": "Profil",
         "logout": "Odjava",
         "language": "Jezik",
-        "supportBookLore": "Podpri BookLore",
+        "supportUngLibrary": "Podpri UngLibrary",
         "notificationAriaLabel": "Enotna ikona za obvestila",
         "createLibrary": "Ustvari knjižnico",
         "stats": "Statistika",

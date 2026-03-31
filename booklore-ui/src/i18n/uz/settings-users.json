@@ -1,6 +1,6 @@
-{
+﻿{
   "title": "Foydalanuvchi boshqaruvi",
-  "description": "Booklore foydalanuvchilarini, ularning ruxsatlarini va kutubxona kirishini boshqaring. Kitob to'plamingiz uchun foydalanuvchi rollarini va qobiliyatlarini konfiguratsiya qiling.",
+  "description": "UngLibrary foydalanuvchilarini, ularning ruxsatlarini va kutubxona kirishini boshqaring. Kitob to'plamingiz uchun foydalanuvchi rollarini va qobiliyatlarini konfiguratsiya qiling.",
   "currentUsers": {
     "sectionTitle": "Joriy foydalanuvchilar",
     "sectionDesc": "Barcha ro'yxatdan o'tgan foydalanuvchilarni, ularning ruxsatlarini va kutubxona kirishini ko'rish va boshqarish.",
@@ -70,7 +70,7 @@
     "koreaderSync": "KOReader sinxi",
     "koboSync": "Kobo sinxi",
     "opdsFeedAccess": "OPDS tasma kirishi",
-    "bulkResetBooklore": "Ommaviy Booklore o'qish progressini qayta o'rnatish",
+    "bulkResetUngLibrary": "Ommaviy UngLibrary o'qish progressini qayta o'rnatish",
     "bulkResetKoreader": "Ommaviy KoReader o'qish progressini qayta o'rnatish",
     "bulkResetReadStatus": "Ommaviy kitob o'qish holatini qayta o'rnatish"
   },

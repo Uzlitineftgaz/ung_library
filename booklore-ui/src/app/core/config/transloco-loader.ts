@@ -7,50 +7,16 @@ export const EN_TRANSLATIONS: Translation = en;
 
 // To add a new language: create src/i18n/<lang>/ with domain JSONs + index.ts, then add an entry here.
 const LAZY_LANG_LOADERS: Record<string, () => Promise<{default: Translation}>> = {
-  es: () => import('../../../i18n/es'),
-  it: () => import('../../../i18n/it'),
-  de: () => import('../../../i18n/de'),
-  fr: () => import('../../../i18n/fr'),
-  nl: () => import('../../../i18n/nl'),
-  pl: () => import('../../../i18n/pl'),
-  pt: () => import('../../../i18n/pt'),
   ru: () => import('../../../i18n/ru'),
-  hr: () => import('../../../i18n/hr'),
-  sv: () => import('../../../i18n/sv'),
-  zh: () => import('../../../i18n/zh'),
-  ja: () => import('../../../i18n/ja'),
-  hu: () => import('../../../i18n/hu'),
-  sl: () => import('../../../i18n/sl'),
-  sk: () => import('../../../i18n/sk'),
-  uk: () => import('../../../i18n/uk'),
-  id: () => import('../../../i18n/id'),
-  da: () => import('../../../i18n/da'),
   uz: () => import('../../../i18n/uz'),
 };
 
-export const AVAILABLE_LANGS = ['en', ...Object.keys(LAZY_LANG_LOADERS)];
+export const AVAILABLE_LANGS = ['en', 'ru', 'uz'];
 
 export const LANG_LABELS: Record<string, string> = {
   en: 'English',
-  es: 'Español',
-  it: 'Italiano',
-  de: 'Deutsch',
-  fr: 'Français',
-  nl: 'Nederlands',
-  pl: 'Polski',
-  pt: 'Português',
   ru: 'Русский',
-  hr: 'Hrvatski',
-  sv: 'Svenska',
-  zh: '中文',
-  ja: '日本語',
-  hu: 'Magyar',
-  sl: 'Slovenščina',
-  sk: 'Slovenčina',
-  uk: 'Українська',
-  id: 'Bahasa Indonesia',
-  da: 'Dansk',
-  uz: 'Uzbek'
+  uz: "O'zbekcha",
 };
 
 function deepMerge(base: Record<string, any>, override: Record<string, any>): Record<string, any> {

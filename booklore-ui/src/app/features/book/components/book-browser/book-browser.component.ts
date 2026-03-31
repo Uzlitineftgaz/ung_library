@@ -1,5 +1,5 @@
 import {AfterViewInit, ChangeDetectorRef, Component, HostListener, inject, OnDestroy, OnInit, ViewChild} from '@angular/core';
-import {ActivatedRoute, NavigationStart, Router} from '@angular/router';
+import {ActivatedRoute, NavigationStart, Router, RouterModule} from '@angular/router';
 import {ConfirmationService, MenuItem, MessageService} from 'primeng/api';
 import {PageTitleService} from '../../../../shared/service/page-title.service';
 import {BookService} from '../../service/book.service';
@@ -13,6 +13,8 @@ import {SortDirection, SortOption} from '../../model/sort.model';
 import {BookState} from '../../model/state/book-state.model';
 import {Book} from '../../model/book.model';
 import {LibraryShelfMenuService} from '../../service/library-shelf-menu.service';
+import {LibraryService} from '../../service/library.service';
+import {IconDisplayComponent} from '../../../../shared/components/icon-display/icon-display.component';
 import {BookTableComponent} from './book-table/book-table.component';
 import {animate, style, transition, trigger} from '@angular/animations';
 import {Button} from 'primeng/button';
@@ -76,7 +78,8 @@ export enum EntityType {
   imports: [
     Button, VirtualScrollerModule, BookCardComponent, AsyncPipe, ProgressSpinner, Menu, InputText, FormsModule,
     BookTableComponent, BookFilterComponent, Tooltip, NgClass, NgStyle, Popover,
-    Checkbox, Slider, Divider, MultiSelect, TieredMenu, BadgeModule, MultiSortPopoverComponent, TranslocoDirective
+    Checkbox, Slider, Divider, MultiSelect, TieredMenu, BadgeModule, MultiSortPopoverComponent, TranslocoDirective,
+    RouterModule, IconDisplayComponent
   ],
   providers: [SeriesCollapseFilter],
   animations: [
@@ -114,6 +117,7 @@ export class BookBrowserComponent implements OnInit, AfterViewInit, OnDestroy {
   private dialogHelperService = inject(BookDialogHelperService);
   private bookMenuService = inject(BookMenuService);
   private libraryShelfMenuService = inject(LibraryShelfMenuService);
+  protected libraryService = inject(LibraryService);
   private pageTitle = inject(PageTitleService);
   private loadingService = inject(LoadingService);
   private bookNavigationService = inject(BookNavigationService);
@@ -127,6 +131,7 @@ export class BookBrowserComponent implements OnInit, AfterViewInit, OnDestroy {
   bookState$: Observable<BookState> | undefined;
   entity$: Observable<Library | Shelf | MagicShelf | null> | undefined;
   entityType$: Observable<EntityType> | undefined;
+  subLibraries$: Observable<Library[]> = of([]);
   private entityRouteInfo$!: Observable<EntityInfo>;
   searchTerm$ = new BehaviorSubject<string>('');
   selectedFilter = new BehaviorSubject<Record<string, string[]> | null>(null);
@@ -365,6 +370,12 @@ export class BookBrowserComponent implements OnInit, AfterViewInit, OnDestroy {
         switchMap(({entityId, entityType}) => this.entityService.fetchEntity(entityId, entityType))
       );
       this.entity$.subscribe(entity => this.handleEntityLoaded(entity));
+      this.subLibraries$ = combineLatest([this.entity$, this.libraryService.libraryState$]).pipe(
+        map(([entity, state]) => {
+          if (!entity || !this.entityService.isLibrary(entity)) return [];
+          return (state.libraries || []).filter(l => l.parentId === (entity as Library).id);
+        })
+      );
     }
   }
 

@@ -1,4 +1,4 @@
-{
+﻿{
     "bulkEdit": {
         "infoBanner": "Válaszd ki mely mezőket alkalmazzuk a kiválasztott <strong>{{ fileCount}}</strong> fájlra. Csak a kijelölt mezők kerülnek frissítésre.",
         "textFieldsTitle": "Szöveg Mezők",

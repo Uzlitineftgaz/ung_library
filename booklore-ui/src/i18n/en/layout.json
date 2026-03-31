@@ -1,4 +1,4 @@
-{
+﻿{
   "topbar": {
     "bookdrop": "Bookdrop",
     "createNewLibrary": "Create New Library",
@@ -10,7 +10,7 @@
     "profile": "Profile",
     "logout": "Logout",
     "language": "Language",
-    "supportBookLore": "Support BookLore",
+    "supportUngLibrary": "Support UngLibrary",
     "notificationAriaLabel": "Unified Notification Icon",
     "createLibrary": "Create Library",
     "stats": "Stats",

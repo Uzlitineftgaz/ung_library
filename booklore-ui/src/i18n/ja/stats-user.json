@@ -1,4 +1,4 @@
-{
+﻿{
     "main": {
         "title": "{{ name }}さんの読書統計",
         "customizeLayout": "レイアウトをカスタマイズ",

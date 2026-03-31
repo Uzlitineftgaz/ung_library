@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "Nastavenia metadát knižnice",
     "description": "Nakonfigurujte správanie načítavania metadát pre vaše knižnice. Nastavte globálne predvolené hodnoty a vytvorte špecifické výnimky pre jednotlivé knižnice, aby ste mohli riadiť, ako sa metadáta kníh získavajú od rôznych poskytovateľov.",
     "defaultSettings": {

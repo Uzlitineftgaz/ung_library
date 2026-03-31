@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "E-postkonfiguration",
     "description": "Konfigurera e-postinställningar för att skicka böcker direkt till dina enheter eller mottagare. Ställ in e-postleverantörer (som Gmail, Outlook eller anpassade SMTP-servrar) och hantera mottagares e-postadresser.",
     "accessRestricted": "Åtkomst begränsad",

@@ -1,6 +1,7 @@
-{
+﻿{
     "creator": {
         "titleNew": "Nytt bibliotek",
+    "titleNewSub": "New Sub-Library",
         "titleEdit": "Redigera bibliotek",
         "subtitle": "Konfigurera din boksamling",
         "libraryDetails": "Biblioteksdetaljer",

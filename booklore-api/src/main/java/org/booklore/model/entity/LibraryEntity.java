@@ -42,11 +42,15 @@ public class LibraryEntity {
 
     private boolean watch;
 
+    @Column(columnDefinition = "MEDIUMTEXT")
     private String icon;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "icon_type")
     private IconType iconType;
+
+    @Column(columnDefinition = "TEXT")
+    private String description;
 
     @Column(name = "file_naming_pattern")
     private String fileNamingPattern;
@@ -69,5 +73,13 @@ public class LibraryEntity {
     @Column(name = "metadata_source")
     @Builder.Default
     private MetadataSource metadataSource = MetadataSource.EMBEDDED;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "parent_id")
+    private LibraryEntity parent;
+
+    @OneToMany(mappedBy = "parent", fetch = FetchType.LAZY)
+    @Builder.Default
+    private List<LibraryEntity> children = new ArrayList<>();
 
 }

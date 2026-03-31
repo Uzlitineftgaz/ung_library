@@ -1,4 +1,4 @@
-{
+﻿{
     "accessRestricted": "Toegang beperkt",
     "contactAdmin": "Neem contact op met uw beheerder om toestemming aan te vragen.",
     "copied": "",
@@ -12,8 +12,8 @@
         "syncConfigDesc": "",
         "enableSync": "",
         "enableSyncDesc": "",
-        "syncWithBooklore": "",
-        "syncWithBookloreDesc": "",
+        "syncWithUngLibrary": "",
+        "syncWithUngLibraryDesc": "",
         "apiPath": "",
         "apiPathDesc": "",
         "username": "",

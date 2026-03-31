@@ -1,4 +1,4 @@
-{
+﻿{
     "bulkEdit": {
         "infoBanner": "Izberi polja, ki jih želiš uporabiti na <strong>{{ fileCount }}</strong> izbranih datotekah. Posodobljena bodo samo označena polja.",
         "textFieldsTitle": "Besedilna polja",

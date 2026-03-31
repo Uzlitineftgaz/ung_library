@@ -5,6 +5,7 @@ import {Router} from '@angular/router';
 import {LibraryService} from '../book/service/library.service';
 import {FormsModule} from '@angular/forms';
 import {InputText} from 'primeng/inputtext';
+import {Textarea} from 'primeng/textarea';
 import {Library, MetadataSource, OrganizationMode} from '../book/model/library.model';
 import {BookType} from '../book/model/book.model';
 import {ToggleSwitch} from 'primeng/toggleswitch';
@@ -24,17 +25,20 @@ import {TranslocoDirective, TranslocoPipe, TranslocoService} from '@jsverse/tran
   selector: 'app-library-creator',
   standalone: true,
   templateUrl: './library-creator.component.html',
-  imports: [FormsModule, InputText, ToggleSwitch, Tooltip, Button, IconDisplayComponent, DragDropModule, Checkbox, Select, TranslocoDirective, TranslocoPipe],
+  imports: [FormsModule, InputText, Textarea, ToggleSwitch, Tooltip, Button, IconDisplayComponent, DragDropModule, Checkbox, Select, TranslocoDirective, TranslocoPipe],
   styleUrl: './library-creator.component.scss'
 })
 export class LibraryCreatorComponent implements OnInit {
   chosenLibraryName: string = '';
+  description: string = '';
   folders: string[] = [];
   selectedIcon: IconSelection | null = null;
 
   mode!: string;
   library!: Library | undefined;
   editModeLibraryName: string = '';
+  parentId: number | null = null;
+  parentLibraryName: string | null = null;
   watch: boolean = false;
   formatPriority: {type: BookType, label: string}[] = [];
   allowAllFormats: boolean = true;
@@ -78,17 +82,27 @@ export class LibraryCreatorComponent implements OnInit {
     this.initializeOrganizationModeOptions();
 
     const data = this.dynamicDialogConfig?.data;
+
+    if (data?.parentId) {
+      this.parentId = data.parentId;
+      const parentLib = this.libraryService.findLibraryById(data.parentId);
+      this.parentLibraryName = parentLib?.name ?? null;
+    }
+
     if (data?.mode === 'edit') {
       this.mode = data.mode;
       this.library = this.libraryService.findLibraryById(data.libraryId);
       if (this.library) {
-        const {name, icon, iconType, paths, watch, formatPriority, allowedFormats} = this.library;
+        const {name, icon, iconType, paths, watch, formatPriority, allowedFormats, description} = this.library;
         this.chosenLibraryName = name;
         this.editModeLibraryName = name;
+        this.description = description ?? '';
 
         if (icon != null && iconType) {
           if (iconType === 'CUSTOM_SVG') {
             this.selectedIcon = {type: 'CUSTOM_SVG', value: icon};
+          } else if (iconType === 'CUSTOM_IMAGE') {
+            this.selectedIcon = {type: 'CUSTOM_IMAGE', value: icon};
           } else {
             const value = icon.slice(0, 6) === 'pi pi-' ? icon : `pi pi-${icon}`;
             this.selectedIcon = {type: 'PRIME_NG', value: value};
@@ -212,6 +226,31 @@ export class LibraryCreatorComponent implements OnInit {
     });
   }
 
+  uploadCustomIcon(): void {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'image/*';
+    input.onchange = (e: Event) => {
+      const file = (e.target as HTMLInputElement).files?.[0];
+      if (!file) return;
+      const maxBytes = 250 * 1024;
+      if (file.size > maxBytes) {
+        this.messageService.add({
+          severity: 'error',
+          summary: this.t.translate('libraryCreator.creator.toast.iconTooLargeSummary'),
+          detail: this.t.translate('libraryCreator.creator.toast.iconTooLargeDetail'),
+        });
+        return;
+      }
+      const reader = new FileReader();
+      reader.onload = () => {
+        this.selectedIcon = {type: 'CUSTOM_IMAGE', value: reader.result as string};
+      };
+      reader.readAsDataURL(file);
+    };
+    input.click();
+  }
+
   addFolder(folder: string): void {
     this.folders.push(folder);
   }
@@ -251,6 +290,7 @@ export class LibraryCreatorComponent implements OnInit {
 
     const library: Library = {
       name: this.chosenLibraryName,
+      description: this.description.trim() || null,
       icon: iconValue,
       iconType: iconType,
       paths: this.folders.map(folder => ({path: folder})),
@@ -258,7 +298,8 @@ export class LibraryCreatorComponent implements OnInit {
       formatPriority: this.formatPriority.map(f => f.type),
       allowedFormats: this.allowAllFormats ? [] : Array.from(this.selectedAllowedFormats),
       metadataSource: this.metadataSource,
-      organizationMode: this.organizationMode
+      organizationMode: this.organizationMode,
+      parentId: this.parentId ?? undefined,
     };
 
     if (this.mode === 'edit') {

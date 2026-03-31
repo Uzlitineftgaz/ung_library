@@ -1,4 +1,4 @@
-{
+﻿{
   "topbar": {
     "bookdrop": "Bookdrop",
     "createNewLibrary": "Yangi kutubxona yaratish",
@@ -10,7 +10,7 @@
     "profile": "Profil",
     "logout": "Chiqish",
     "language": "Til",
-    "supportBookLore": "BookLore'ni qo‘llab-quvvatlash",
+    "supportUngLibrary": "UngLibrary'ni qo‘llab-quvvatlash",
     "notificationAriaLabel": "Yagona bildirishnoma belgisi",
     "createLibrary": "Kutubxona yaratish",
     "stats": "Statistika",

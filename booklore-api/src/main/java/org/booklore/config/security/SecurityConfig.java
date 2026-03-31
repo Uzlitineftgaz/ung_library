@@ -79,10 +79,10 @@ public class SecurityConfig {
                         .anyRequest().authenticated()
                 )
                 .httpBasic(basic -> basic
-                        .realmName("Booklore OPDS")
+                        .realmName("UngLibrary OPDS")
                         .authenticationEntryPoint((request, response, authException) -> {
                             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-                            response.setHeader("WWW-Authenticate", "Basic realm=\"Booklore OPDS\"");
+                            response.setHeader("WWW-Authenticate", "Basic realm=\"UngLibrary OPDS\"");
                             response.getWriter().write("HTTP Status 401 - " + authException.getMessage());
                         })
                 );
@@ -101,10 +101,10 @@ public class SecurityConfig {
                         .anyRequest().authenticated()
                 )
                 .httpBasic(basic -> basic
-                        .realmName("Booklore Komga API")
+                        .realmName("UngLibrary Komga API")
                         .authenticationEntryPoint((request, response, authException) -> {
                             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-                            response.setHeader("WWW-Authenticate", "Basic realm=\"Booklore Komga API\"");
+                            response.setHeader("WWW-Authenticate", "Basic realm=\"UngLibrary Komga API\"");
                             response.getWriter().write("HTTP Status 401 - " + authException.getMessage());
                         })
                 );

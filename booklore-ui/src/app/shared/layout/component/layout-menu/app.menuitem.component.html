@@ -34,7 +34,7 @@
       [class.active-route-container]="isRouteActive"
       (click)="triggerLink()"
     >
-      @if ((item.routerLink && !item.items)) {
+      @if (item.routerLink) {
         <a
           #link
           (click)="itemClick($event)"
@@ -100,7 +100,7 @@
 
     <div [@children]="isExpanded(key) ? 'expanded' : 'collapsed'" class="submenu-container">
       @if (item.items) {
-        <ul>
+        <ul [class.sub-library-list]="!root && item.type === 'Library'">
           @for (child of item.items; track child.routerLink?.[0] ?? child.label; let i = $index) {
             <li app-menuitem [item]="child" [index]="i" [parentKey]="key" [class]="child.badgeClass"></li>
           }

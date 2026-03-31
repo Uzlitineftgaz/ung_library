@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "Gestionnaire de tâches système",
     "description": "Gérez les tâches système automatisées pour la maintenance de la bibliothèque, l'actualisation des métadonnées et le nettoyage du cache. Planifiez des opérations récurrentes à l'aide d'<a href=\"https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"cron-link\">expressions cron Spring</a>.",
     "systemTasks": {

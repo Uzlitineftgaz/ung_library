@@ -1,4 +1,4 @@
-{
+﻿{
     "bulkEdit": {
         "infoBanner": "Seleziona quali campi applicare a <strong>{{ fileCount }}</strong> file selezionati. Solo i campi selezionati verranno aggiornati.",
         "textFieldsTitle": "Campi di testo",

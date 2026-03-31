@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "Gestor de tareas del sistema",
     "description": "Gestiona las tareas automatizadas del sistema para mantenimiento de bibliotecas, actualización de metadatos y limpieza de caché. Programa operaciones recurrentes usando <a href=\"https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"cron-link\">expresiones cron de Spring</a>.",
     "systemTasks": {

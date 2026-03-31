@@ -1,4 +1,4 @@
-{
+﻿{
   "title": "Email Configuration",
   "description": "Configure email settings to send books directly to your devices or recipients. Set up email providers (like Gmail, Outlook, or custom SMTP servers) and manage recipient email addresses.",
   "accessRestricted": "Access Restricted",

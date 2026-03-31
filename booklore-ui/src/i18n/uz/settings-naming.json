@@ -1,9 +1,9 @@
-{
+﻿{
   "title": "Fayl nomlash naqshlari",
   "description": "Metama'lumot joylashtiruvchilardan foydalanib avtomatik fayl tashkil etishni sozlang. Naqshlar yuklash, fayllarni ko'chirish yoki metama'lumotlar yangilanishidan keyin qo'llaniladi.",
   "warning": {
     "title": "Metama'lumotlar sifati haqida bildirishnoma:",
-    "text": "Fayl nomlash butunlay Booklore da saqlangan metama'lumotlarga bog'liq. Bu xususiyat faqat yuqori sifatli, to'liq metama'lumotlar bilan kuratorlik qilingan kutubxonalarga tavsiya etiladi."
+    "text": "Fayl nomlash butunlay UngLibrary da saqlangan metama'lumotlarga bog'liq. Bu xususiyat faqat yuqori sifatli, to'liq metama'lumotlar bilan kuratorlik qilingan kutubxonalarga tavsiya etiladi."
   },
   "defaultPattern": {
     "sectionTitle": "Standart naqsh",

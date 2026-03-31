@@ -63,8 +63,8 @@ public class KoreaderService {
                 .document(bookHash)
                 .progress(progress.getKoreaderProgress())
                 .percentage(progress.getKoreaderProgressPercent())
-                .device("BookLore")
-                .device_id("BookLore")
+                .device("UngLibrary")
+                .device_id("UngLibrary")
                 .build();
     }
 

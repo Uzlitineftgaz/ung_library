@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "システムタスクマネージャー",
     "description": "ライブラリの保守、メタデータの更新、キャッシュのクリーンアップのための自動化されたシステムタスクを管理します。<a href=\"https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"cron-link\">Spring cron式</a>を使用して定期実行をスケジュールします。",
     "systemTasks": {

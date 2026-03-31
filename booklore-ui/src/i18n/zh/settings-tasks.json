@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "系统任务管理器",
     "description": "管理书库维护、元数据刷新和缓存清理的自动化系统任务。使用 <a href=\"https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"cron-link\">Spring cron 表达式</a>安排定期操作。",
     "systemTasks": {

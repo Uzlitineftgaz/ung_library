@@ -1,6 +1,6 @@
 {
-  "name": "booklore",
-  "short_name": "booklore",
+  "name": "UngLibrary",
+  "short_name": "UngLibrary",
   "display": "fullscreen",
   "display_override": ["fullscreen", "standalone", "browser"],
   "scope": "./",

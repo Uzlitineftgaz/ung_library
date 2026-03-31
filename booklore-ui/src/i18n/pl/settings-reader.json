@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "Preferencje czytnika",
     "description": "Skonfiguruj ustawienia czytania dla swojej biblioteki. Ustaw domyślne preferencje, które służą jako nadpisania dla poszczególnych książek, lub pozwól każdej książce zachować własne ustawienia dla formatów PDF, EPUB, FB2, MOBI, AZW3 i CBX.",
     "appMode": {

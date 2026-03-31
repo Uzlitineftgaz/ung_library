@@ -1,4 +1,4 @@
-{
+﻿{
     "bulkEdit": {
         "infoBanner": "Vyberte, ktoré polia sa majú použiť na <strong>{{ fileCount }}</strong> vybraný(é) súbor(y). Aktualizované budú iba zaškrtnuté polia.",
         "textFieldsTitle": "Textové polia",

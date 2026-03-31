@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "Керування системними завданнями",
     "description": "Керуйте автоматизованими системними завданнями для обслуговування бібліотеки, оновлення метаданих і очищення кешу. Плануйте повторювані операції за допомогою <a href=\"https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"cron-link\">cron-виразів Spring</a>.",
     "systemTasks": {

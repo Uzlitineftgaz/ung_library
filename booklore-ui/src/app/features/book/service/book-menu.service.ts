@@ -358,17 +358,17 @@ export class BookMenuService {
 
     if (permissions?.canBulkResetBookloreReadProgress) {
       items.push({
-        label: this.t.translate('book.menuService.menu.resetBookloreProgress'),
+        label: this.t.translate('book.menuService.menu.resetUngLibraryProgress'),
         icon: 'pi pi-undo',
         command: () => {
           this.confirmationService.confirm({
-            message: this.t.translate('book.menuService.confirm.resetBookloreMessage', {count}),
+            message: this.t.translate('book.menuService.confirm.resetUngLibraryMessage', {count}),
             header: this.t.translate('book.menuService.confirm.resetHeader'),
             icon: 'pi pi-exclamation-triangle',
             acceptLabel: this.t.translate('common.yes'),
             rejectLabel: this.t.translate('common.no'),
             accept: () => {
-              const loader = this.loadingService.show(this.t.translate('book.menuService.loading.resettingBookloreProgress', {count}));
+              const loader = this.loadingService.show(this.t.translate('book.menuService.loading.resettingUngLibraryProgress', {count}));
 
               this.bookService.resetProgress(Array.from(selectedBooks), ResetProgressTypes.BOOKLORE)
                 .pipe(finalize(() => this.loadingService.hide(loader)))

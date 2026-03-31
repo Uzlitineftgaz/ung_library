@@ -33,6 +33,7 @@ server:
     min-response-size: 1024
   tomcat:
     relaxed-query-chars: '[,],%,{,},|'
+  address: 0.0.0.0
 
 spring:
   jackson:

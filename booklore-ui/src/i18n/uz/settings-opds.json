@@ -1,4 +1,4 @@
-{
+﻿{
   "title": "OPDS konfiguratsiyasi",
   "description": "OPDS hisob ma'lumotlarini boshqaring va kitob to'plamingiz o'qish ilovalari bilan qanday baham ko'rilishini nazorat qiling. Standart bo'lib, siz kirish huquqiga ega bo'lgan barcha kutubxonalar OPDS tasmaga kiritiladi.",
   "server": {
@@ -7,7 +7,7 @@
     "opdsLabel": "OPDS server",
     "opdsDesc": "OPDS serverini yoqish uchun KOReader, Moon+ Reader va boshqa OPDS-mos keluvchi o'qish ilovalar orqali kitob to'plamingizga kirish.",
     "komgaLabel": "Komga API",
-    "komgaDesc": "Komga mos keluvchi mijozlardan (Tachiyomi, Komelia va boshqalar) Booklore bilan foydalanish uchun Komga-mos keluvchi API ni yoqish. Autentifikatsiya uchun bir xil OPDS foydalanuvchi hisoblaridan foydalanadi.",
+    "komgaDesc": "Komga mos keluvchi mijozlardan (Tachiyomi, Komelia va boshqalar) UngLibrary bilan foydalanish uchun Komga-mos keluvchi API ni yoqish. Autentifikatsiya uchun bir xil OPDS foydalanuvchi hisoblaridan foydalanadi.",
     "groupUnknownLabel": "Noma'lum seriyalarni guruhlash",
     "groupUnknownDesc": "Yoqilganda, seriyasiz kitoblar \"Noma'lum seriya\" ostida guruhlanadi. O'chirilganda, har bir kitob o'zining alohida seriyasi sifatida ko'rinadi.",
     "enabled": "Yoqilgan",
@@ -17,7 +17,7 @@
   },
   "endpoints": {
     "sectionTitle": "API nuqtalari",
-    "sectionDesc": "O'qish ilovalarini Booklore ga ulash uchun bu URL lardan foydalaning.",
+    "sectionDesc": "O'qish ilovalarini UngLibrary ga ulash uchun bu URL lardan foydalaning.",
     "opdsCatalog": "OPDS katalog URL",
     "opdsHint": "OPDS-mos keluvchi ilovalar uchun",
     "komgaBase": "Komga asosiy URL",
@@ -26,7 +26,7 @@
   },
   "users": {
     "sectionTitle": "OPDS foydalanuvchilari",
-    "sectionDesc": "OPDS va Komga API kirish uchun foydalanuvchi hisoblarini boshqaring. Bu Booklore foydalanuvchi hisoblaridan alohida.",
+    "sectionDesc": "OPDS va Komga API kirish uchun foydalanuvchi hisoblarini boshqaring. Bu UngLibrary foydalanuvchi hisoblaridan alohida.",
     "addUser": "Foydalanuvchi qo'shish",
     "emptyTitle": "Foydalanuvchilar topilmadi",
     "emptySubtitle": "Boshlash uchun birinchi OPDS foydalanuvchingizni yarating",

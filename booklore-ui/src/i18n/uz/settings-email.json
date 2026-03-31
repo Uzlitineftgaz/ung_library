@@ -1,4 +1,4 @@
-{
+﻿{
   "title": "Email konfiguratsiyasi",
   "description": "Kitoblarni to'g'ridan-to'g'ri qurilmangizga yoki qabul qiluvchilarga yuborish uchun email sozlamalarini sozlang. Email provayderlarini (Gmail, Outlook yoki maxsus SMTP serverlar kabi) sozlang va qabul qiluvchi email manzillarini boshqaring.",
   "accessRestricted": "Kirish cheklangan",

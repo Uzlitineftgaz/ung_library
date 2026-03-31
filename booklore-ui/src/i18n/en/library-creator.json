@@ -1,6 +1,7 @@
-{
+﻿{
   "creator": {
     "titleNew": "New Library",
+    "titleNewSub": "New Sub-Library",
     "titleEdit": "Edit Library",
     "subtitle": "Configure your book collection",
     "libraryDetails": "Library Details",
@@ -8,7 +9,11 @@
     "namePlaceholder": "My Library",
     "iconLabel": "Icon (Optional)",
     "chooseIcon": "Choose icon",
+    "uploadIcon": "Upload image",
     "customSvg": "Custom SVG",
+    "customImage": "Custom image",
+    "descriptionLabel": "Description (Optional)",
+    "descriptionPlaceholder": "A short description of this library...",
     "bookFolders": "Book Folders",
     "addFolder": "Add folder",
     "emptyFoldersHint": "Add folders containing your book files",
@@ -57,7 +62,9 @@
       "createdDetail": "The library was created successfully.",
       "createdLargeDetail": "Library created with {{count}} files. Loading in progress...",
       "createFailedSummary": "Creation Failed",
-      "createFailedDetail": "An error occurred while creating the library. Please try again."
+      "createFailedDetail": "An error occurred while creating the library. Please try again.",
+      "iconTooLargeSummary": "Image Too Large",
+      "iconTooLargeDetail": "Please select an image smaller than 250 KB."
     }
   },
   "loading": {

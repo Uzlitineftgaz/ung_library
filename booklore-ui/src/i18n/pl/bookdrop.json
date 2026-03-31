@@ -1,4 +1,4 @@
-{
+﻿{
     "bulkEdit": {
         "infoBanner": "Wybierz, które pola mają zostać zastosowane do <strong>{{ fileCount }}</strong> wybranych plików. Tylko zaznaczone pola zostaną zaktualizowane.",
         "textFieldsTitle": "Pola tekstowe",

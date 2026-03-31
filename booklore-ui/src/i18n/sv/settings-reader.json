@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "Läsinställningar",
     "description": "Konfigurera läsupplevelsens inställningar för ditt bibliotek. Ange standardinställningar som fungerar som åsidosättningar för enskilda böcker, eller låt varje bok behålla sina egna anpassade inställningar för PDF, EPUB, FB2, MOBI, AZW3 och CBX-format.",
     "appMode": {

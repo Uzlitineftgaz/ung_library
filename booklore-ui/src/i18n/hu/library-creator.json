@@ -1,6 +1,7 @@
-{
+﻿{
     "creator": {
         "titleNew": "Új Könyvtár",
+    "titleNewSub": "New Sub-Library",
         "titleEdit": "Könyvtár szerkesztése",
         "subtitle": "Konfiguráld a könyv gyűjteményed",
         "libraryDetails": "Könyvtár részletek",

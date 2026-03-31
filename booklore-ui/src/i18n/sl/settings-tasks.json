@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "Upravitelj sistemskih opravil",
     "description": "Upravljaj avtomatizirana sistemska opravila za vzdrževanje knjižnice, osveževanje metapodatkov in čiščenje predpomnilnika. Nastavi ponavljajoče se operacije z uporabo <a href=\"https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"cron-link\">Spring cron izrazov</a>.",
     "systemTasks": {

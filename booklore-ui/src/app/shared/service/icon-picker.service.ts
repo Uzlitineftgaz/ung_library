@@ -3,7 +3,7 @@ import {Observable} from 'rxjs';
 import {DialogLauncherService} from '../services/dialog-launcher.service';
 
 export interface IconSelection {
-  type: 'PRIME_NG' | 'CUSTOM_SVG';
+  type: 'PRIME_NG' | 'CUSTOM_SVG' | 'CUSTOM_IMAGE';
   value: string;
 }
 

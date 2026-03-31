@@ -1,6 +1,7 @@
-{
+﻿{
     "creator": {
         "titleNew": "Nieuwe bibliotheek",
+    "titleNewSub": "New Sub-Library",
         "titleEdit": "Bibliotheek bewerken",
         "subtitle": "",
         "libraryDetails": "",

@@ -1,6 +1,7 @@
-{
+﻿{
   "creator": {
     "titleNew": "Yangi kutubxona",
+    "titleNewSub": "Yangi ichki kutubxona",
     "titleEdit": "Kutubxonani tahrirlash",
     "subtitle": "Kitob kolleksiyangizni sozlang",
     "libraryDetails": "Kutubxona tafsilotlari",
@@ -8,7 +9,11 @@
     "namePlaceholder": "Mening kutubxonam",
     "iconLabel": "Belgi (ixtiyoriy)",
     "chooseIcon": "Belgi tanlash",
+    "uploadIcon": "Rasm yuklash",
     "customSvg": "Maxsus SVG",
+    "customImage": "Maxsus rasm",
+    "descriptionLabel": "Tavsif (ixtiyoriy)",
+    "descriptionPlaceholder": "Bu kutubxona haqida qisqacha tavsif...",
     "bookFolders": "Kitob papkalari",
     "addFolder": "Papka qo‘shish",
     "emptyFoldersHint": "Kitob fayllari joylashgan papkalarni qo‘shing",
@@ -57,7 +62,9 @@
       "createdDetail": "Kutubxona muvaffaqiyatli yaratildi.",
       "createdLargeDetail": "{{count}} ta fayl bilan kutubxona yaratildi. Yuklanmoqda...",
       "createFailedSummary": "Yaratish muvaffaqiyatsiz",
-      "createFailedDetail": "Kutubxonani yaratishda xatolik yuz berdi. Iltimos qayta urinib ko‘ring."
+      "createFailedDetail": "Kutubxonani yaratishda xatolik yuz berdi. Iltimos qayta urinib ko’ring.",
+      "iconTooLargeSummary": "Rasm juda katta",
+      "iconTooLargeDetail": "Iltimos 250 KB dan kichik rasm tanlang."
     }
   },
   "loading": {

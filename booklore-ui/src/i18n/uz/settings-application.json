@@ -1,6 +1,6 @@
-{
+﻿{
   "title": "Global sozlamalar",
-  "description": "Booklore nusxangiz uchun global sozlamalarni sozlang, jumladan muqova tasvirlarini boshqarish, qidiruv sozlamalari va fayl yuklash chegaralari.",
+  "description": "UngLibrary nusxangiz uchun global sozlamalarni sozlang, jumladan muqova tasvirlarini boshqarish, qidiruv sozlamalari va fayl yuklash chegaralari.",
   "covers": {
     "sectionTitle": "Kitob muqova tasviri",
     "regenerate": "Muqovalarni qayta yaratish",
@@ -43,7 +43,7 @@
   "telemetry": {
     "sectionTitle": "Telemetriya",
     "enableTelemetry": "Telemetriyani yoqish",
-    "telemetryDesc": "Anonim foydalanish statistikasini ulashish orqali Booklore ni yaxshilashga yordam bering. Bu ma'lumotlar ishlab chiquvchilarga qaysi xususiyatlar eng ko'p ishlatilishini ko'rishga, xatoliklarni aniqlashga va ishlash muammolarini aniqlashga imkon beradi, shuning uchun ular keyingi ishni bilishadi. Hech qachon shaxsiy ma'lumotlar, kitob mazmuni yoki har qanday aniqlanadigan ma'lumot yuborilmaydi. Ma'lumotlar har 24 soatda bir marta Booklore serveriga avtomatik yuboriladi. Bu butunlay xavfsiz va ishlab chiquvchilarga juda foydali."
+    "telemetryDesc": "Anonim foydalanish statistikasini ulashish orqali UngLibrary ni yaxshilashga yordam bering. Bu ma'lumotlar ishlab chiquvchilarga qaysi xususiyatlar eng ko'p ishlatilishini ko'rishga, xatoliklarni aniqlashga va ishlash muammolarini aniqlashga imkon beradi, shuning uchun ular keyingi ishni bilishadi. Hech qachon shaxsiy ma'lumotlar, kitob mazmuni yoki har qanday aniqlanadigan ma'lumot yuborilmaydi. Ma'lumotlar har 24 soatda bir marta UngLibrary serveriga avtomatik yuboriladi. Bu butunlay xavfsiz va ishlab chiquvchilarga juda foydali."
   },
   "settingsSaved": "Sozlamalar saqlandi",
   "settingsSavedDetail": "Sozlamalar muvaffaqiyatli saqlandi!",

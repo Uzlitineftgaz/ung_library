@@ -1,4 +1,4 @@
-{
+﻿{
   "bulkEdit": {
     "infoBanner": "Select which fields to apply to <strong>{{ fileCount }}</strong> selected file(s). Only checked fields will be updated.",
     "textFieldsTitle": "Text Fields",

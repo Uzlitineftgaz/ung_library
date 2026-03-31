@@ -1,4 +1,4 @@
-{
+﻿{
     "browser": {
         "confirm": {
             "deleteMessage": "Tem certeza de que deseja excluir {{ count }} livro(s)?\n\nIsso removerá permanentemente os arquivos dos livros do seu sistema de arquivos.\n\nEssa ação não pode ser desfeita.",
@@ -92,7 +92,7 @@
             "moreActions": "Mais Ações",
             "organizeFile": "Organizar Arquivo",
             "readStatus": "Status de Leitura",
-            "resetBookloreProgress": "Redefinir Progresso do Booklore",
+            "resetUngLibraryProgress": "Redefinir Progresso do UngLibrary",
             "resetKOReaderProgress": "Redefinir Progresso do KOReader",
             "book": "Livro",
             "loading": "Carregando..."
@@ -113,10 +113,10 @@
             "readStatusFailedSummary": "Atualização Falhou",
             "readStatusFailedDetail": "Não foi possível atualizar o status de leitura.",
             "progressResetSummary": "Progresso Redefinido",
-            "progressResetBookloreDetail": "O progresso de leitura do Booklore foi redefinido.",
+            "progressResetUngLibraryDetail": "O progresso de leitura do UngLibrary foi redefinido.",
             "progressResetKOReaderDetail": "O progresso de leitura do KOReader foi redefinido.",
             "progressResetFailedSummary": "Falhou",
-            "progressResetBookloreFailedDetail": "Não foi possível redefinir o progresso do Booklore.",
+            "progressResetUngLibraryFailedDetail": "Não foi possível redefinir o progresso do UngLibrary.",
             "progressResetKOReaderFailedDetail": "Não foi possível redefinir o progresso do KOReader.",
             "coverRegenSuccessSummary": "Sucesso",
             "coverRegenSuccessDetail": "Regeneração de capa iniciada",
@@ -197,7 +197,7 @@
             "setContentRating": "Definir Classificação de Conteúdo",
             "clearContentRating": "Limpar Classificação de Conteúdo",
             "removeFromAllShelves": "Remover de todas as prateleiras",
-            "resetBookloreProgress": "Redefinir Progresso do Booklore",
+            "resetUngLibraryProgress": "Redefinir Progresso do UngLibrary",
             "resetKOReaderProgress": "Redefinir Progresso do KOReader"
         },
         "confirm": {
@@ -213,7 +213,7 @@
             "clearContentRatingHeader": "Confirmar Limpeza da Classificação de Conteúdo",
             "unshelveMessage": "Tem certeza de que deseja remover {{ count }} livro(s) de TODAS as suas prateleiras?",
             "unshelveHeader": "Confirmar Remoção da Prateleira",
-            "resetBookloreMessage": "Tem certeza de que deseja redefinir o progresso de leitura do Booklore para {{ count }} livro(s)?",
+            "resetUngLibraryMessage": "Tem certeza de que deseja redefinir o progresso de leitura do UngLibrary para {{ count }} livro(s)?",
             "resetKOReaderMessage": "Tem certeza de que deseja redefinir o progresso de leitura do KOReader para {{ count }} livro(s)?",
             "resetHeader": "Confirmar Redefinição"
         },
@@ -238,7 +238,7 @@
             "unshelveSuccessDetail": "Livros removidos de todas as prateleiras",
             "unshelveFailedDetail": "Falha ao atualizar prateleiras dos livros",
             "progressResetSummary": "Progresso Redefinido",
-            "bookloreProgressResetDetail": "O progresso de leitura do Booklore foi redefinido.",
+            "bookloreProgressResetDetail": "O progresso de leitura do UngLibrary foi redefinido.",
             "koreaderProgressResetDetail": "O progresso de leitura do KOReader foi redefinido.",
             "failedSummary": "Falhou",
             "progressResetFailedDetail": "Não foi possível redefinir o progresso."
@@ -250,14 +250,15 @@
             "settingContentRating": "Definindo classificação de conteúdo de {{ count }} livro(s)...",
             "clearingContentRating": "Limpando classificação de conteúdo de {{ count }} livro(s)...",
             "removingFromShelves": "Removendo {{ count }} livro(s) das prateleiras...",
-            "resettingBookloreProgress": "Redefinindo progresso do Booklore para {{ count }} livro(s)...",
+            "resettingUngLibraryProgress": "Redefinindo progresso do UngLibrary para {{ count }} livro(s)...",
             "resettingKOReaderProgress": "Redefinindo progresso do KOReader para {{ count }} livro(s)..."
         }
     },
     "shelfMenuService": {
         "library": {
             "optionsLabel": "Opções",
-            "addPhysicalBook": "Adicionar Livro Físico",
+            "addSubLibrary": "Add Sub-Library",
+      "addPhysicalBook": "Adicionar Livro Físico",
             "editLibrary": "Editar Biblioteca",
             "rescanLibrary": "Reescanear Biblioteca",
             "customFetchMetadata": "Busca Personalizada de Metadados",

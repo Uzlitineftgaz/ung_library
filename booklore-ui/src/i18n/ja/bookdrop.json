@@ -1,4 +1,4 @@
-{
+﻿{
     "bulkEdit": {
         "infoBanner": "<strong>{{ fileCount }}</strong>件の選択ファイルに適用するフィールドを選択してください。チェックされたフィールドのみ更新されます。",
         "textFieldsTitle": "テキストフィールド",

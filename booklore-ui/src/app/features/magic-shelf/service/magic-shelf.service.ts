@@ -12,7 +12,7 @@ export interface MagicShelf {
   id?: number | null;
   name: string;
   icon?: string | null;
-  iconType?: 'PRIME_NG' | 'CUSTOM_SVG' | null;
+  iconType?: 'PRIME_NG' | 'CUSTOM_SVG' | 'CUSTOM_IMAGE' | null;
   filterJson: string;
   isPublic?: boolean;
 }
@@ -94,7 +94,7 @@ export class MagicShelfService {
     );
   }
 
-  saveShelf(data: { id?: number; name: string | null; icon: string | null; iconType?: 'PRIME_NG' | 'CUSTOM_SVG'; group: unknown, isPublic?: boolean | null }): Observable<MagicShelf> {
+  saveShelf(data: { id?: number; name: string | null; icon: string | null; iconType?: 'PRIME_NG' | 'CUSTOM_SVG' | 'CUSTOM_IMAGE'; group: unknown, isPublic?: boolean | null }): Observable<MagicShelf> {
     const payload: MagicShelf = {
       id: data.id,
       name: data.name ?? '',

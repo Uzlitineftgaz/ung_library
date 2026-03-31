@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "Nastavenia OIDC",
     "description": "Konfigurujte OpenID Connect (OIDC) pre jednotné prihlásenie (SSO) s externými poskytovateľmi identity, ako sú Authentik, Authelia alebo Pocket ID.",
     "methods": {

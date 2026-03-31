@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "Gerenciador de Tarefas do Sistema",
     "description": "Gerencie tarefas automatizadas do sistema para manutenção de bibliotecas, atualização de metadados e limpeza de cache. Agende operações recorrentes usando <a href=\"https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"cron-link\">expressões cron do Spring</a>.",
     "systemTasks": {

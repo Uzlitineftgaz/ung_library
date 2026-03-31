@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "Systemuppgiftshanterare",
     "description": "Hantera automatiserade systemuppgifter för biblioteksunderhåll, metadatauppdatering och cacherensning. Schemalägg återkommande operationer med <a href=\"https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"cron-link\">Spring cron-uttryck</a>.",
     "systemTasks": {

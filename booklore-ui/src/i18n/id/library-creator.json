@@ -1,6 +1,7 @@
-{
+﻿{
     "creator": {
         "titleNew": "Perpustakaan Baru",
+    "titleNewSub": "New Sub-Library",
         "titleEdit": "Ubah Perpustakaan",
         "subtitle": "",
         "libraryDetails": "",

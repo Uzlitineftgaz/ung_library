@@ -1,4 +1,4 @@
-{
+﻿{
     "topbar": {
         "bookdrop": "Bookdrop",
         "createNewLibrary": "Створити нову бібліотеку",
@@ -10,7 +10,7 @@
         "profile": "Профіль",
         "logout": "Вийти",
         "language": "Мова",
-        "supportBookLore": "Підтримати BookLore",
+        "supportUngLibrary": "Підтримати UngLibrary",
         "notificationAriaLabel": "Значок сповіщень",
         "createLibrary": "Створити бібліотеку",
         "stats": "Статистика",

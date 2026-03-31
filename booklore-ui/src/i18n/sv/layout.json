@@ -1,4 +1,4 @@
-{
+﻿{
     "topbar": {
         "bookdrop": "Bookdrop",
         "createNewLibrary": "Skapa nytt bibliotek",
@@ -10,7 +10,7 @@
         "profile": "Profil",
         "logout": "Logga ut",
         "language": "Språk",
-        "supportBookLore": "Stöd BookLore",
+        "supportUngLibrary": "Stöd UngLibrary",
         "notificationAriaLabel": "Samlad notifikationsikon",
         "createLibrary": "Skapa bibliotek",
         "stats": "Statistik",

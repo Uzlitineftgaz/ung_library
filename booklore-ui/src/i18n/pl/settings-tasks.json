@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "Menedżer zadań systemowych",
     "description": "Zarządzaj automatycznymi zadaniami systemowymi do konserwacji biblioteki, odświeżania metadanych i czyszczenia pamięci podręcznej. Zaplanuj powtarzające się operacje za pomocą <a href=\"https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"cron-link\">wyrażeń cron Spring</a>.",
     "systemTasks": {

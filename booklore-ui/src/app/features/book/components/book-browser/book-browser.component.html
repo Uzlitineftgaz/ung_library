@@ -261,6 +261,38 @@
       </div>
     </div>
 
+    @if (subLibraries$ | async; as subLibraries) {
+      @if (subLibraries.length > 0) {
+        <div class="content-section-label">
+          <i class="pi pi-sitemap"></i>
+          <span>{{ t('labels.subLibraries') }}</span>
+        </div>
+        <div class="sub-libraries-grid">
+          @for (sub of subLibraries; track sub.id) {
+            <a class="sub-library-card" [routerLink]="['/library', sub.id, 'books']">
+              <div class="sub-library-card-icon">
+                @if (sub.icon && sub.iconType) {
+                  <app-icon-display [icon]="{type: sub.iconType!, value: sub.icon!}" size="28px" />
+                } @else {
+                  <i class="pi pi-book"></i>
+                }
+              </div>
+              <div class="sub-library-card-body">
+                <span class="sub-library-name">{{ sub.name }}</span>
+                @if (sub.description) {
+                  <span class="sub-library-desc">{{ sub.description }}</span>
+                }
+              </div>
+            </a>
+          }
+        </div>
+        <div class="content-section-label content-section-label-books">
+          <i class="pi pi-book"></i>
+          <span>{{ t('labels.books') }}</span>
+        </div>
+      }
+    }
+
     @if (bookState$ | async; as bookState) {
       <div>
         @if (!bookState?.loaded && !bookState?.error) {

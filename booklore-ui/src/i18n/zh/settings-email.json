@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "邮件配置",
     "description": "配置邮件设置以直接将图书发送到您的设备或收件人。设置邮件提供商（如 Gmail、Outlook 或自定义 SMTP 服务器）并管理收件人邮箱地址。",
     "accessRestricted": "访问受限",

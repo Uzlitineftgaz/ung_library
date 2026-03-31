@@ -1,6 +1,6 @@
-{
+﻿{
     "title": "全局偏好设置",
-    "description": "配置 BookLore 实例的全局设置，包括封面图片处理、搜索偏好和文件上传限制。",
+    "description": "配置 UngLibrary 实例的全局设置，包括封面图片处理、搜索偏好和文件上传限制。",
     "covers": {
         "sectionTitle": "书籍封面图片",
         "regenerate": "重新生成封面",
@@ -37,7 +37,7 @@
     "telemetry": {
         "sectionTitle": "遥测",
         "enableTelemetry": "启用遥测",
-        "telemetryDesc": "通过共享匿名使用统计数据来帮助改进 BookLore。这些数据可以让开发者了解哪些功能最常使用、识别错误和发现性能问题，从而知道下一步该做什么。不会发送任何个人信息、书籍内容或任何可识别的数据。数据每 24 小时自动发送一次到 BookLore 服务器。这完全安全，对开发者非常有帮助。"
+        "telemetryDesc": "通过共享匿名使用统计数据来帮助改进 UngLibrary。这些数据可以让开发者了解哪些功能最常使用、识别错误和发现性能问题，从而知道下一步该做什么。不会发送任何个人信息、书籍内容或任何可识别的数据。数据每 24 小时自动发送一次到 UngLibrary 服务器。这完全安全，对开发者非常有帮助。"
     },
     "settingsSaved": "设置已保存",
     "settingsSavedDetail": "设置已成功保存！",

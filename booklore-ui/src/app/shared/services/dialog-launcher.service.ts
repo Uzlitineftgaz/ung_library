@@ -91,6 +91,16 @@ export class DialogLauncherService {
     });
   }
 
+  openSubLibraryCreateDialog(parentId: number): DynamicDialogRef | null {
+    return this.openDialog(LibraryCreatorComponent, {
+      showHeader: false,
+      styleClass: `${DialogSize.MD} ${DialogStyle.MINIMAL}`,
+      data: {
+        parentId: parentId,
+      }
+    });
+  }
+
   openLibraryEditDialog(libraryId: number): DynamicDialogRef | null {
     return this.openDialog(LibraryCreatorComponent, {
       showHeader: false,

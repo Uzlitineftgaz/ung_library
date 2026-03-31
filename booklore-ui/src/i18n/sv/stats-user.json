@@ -1,4 +1,4 @@
-{
+﻿{
     "main": {
         "title": "{{ name }}s lasstatistik",
         "customizeLayout": "Anpassa layout",

@@ -1,4 +1,4 @@
-{
+﻿{
     "bulkEdit": {
         "infoBanner": "选择要应用于 <strong>{{ fileCount }}</strong> 个选中文件的字段。仅勾选的字段会被更新。",
         "textFieldsTitle": "文本字段",

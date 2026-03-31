@@ -6,8 +6,12 @@
           <i class="pi pi-book"></i>
         </div>
         <div class="header-text">
-          <h1>{{ mode === 'edit' ? t('titleEdit') : t('titleNew') }}</h1>
-          <p>{{ t('subtitle') }}</p>
+          <h1>{{ mode === 'edit' ? t('titleEdit') : (parentLibraryName ? t('titleNewSub') : t('titleNew')) }}</h1>
+          @if (parentLibraryName) {
+            <p class="parent-library-hint"><i class="pi pi-sitemap"></i> {{ parentLibraryName }}</p>
+          } @else {
+            <p>{{ t('subtitle') }}</p>
+          }
         </div>
       </div>
       <p-button
@@ -49,18 +53,26 @@
               {{ t('iconLabel') }}
             </label>
             @if (!selectedIcon) {
-              <button class="icon-picker-trigger" (click)="openIconPicker()" type="button">
-                <i class="pi pi-plus"></i>
-                <span>{{ t('chooseIcon') }}</span>
-              </button>
+              <div class="icon-picker-buttons">
+                <button class="icon-picker-trigger" (click)="openIconPicker()" type="button">
+                  <i class="pi pi-palette"></i>
+                  <span>{{ t('chooseIcon') }}</span>
+                </button>
+                <button class="icon-upload-trigger" (click)="uploadCustomIcon()" type="button">
+                  <i class="pi pi-upload"></i>
+                  <span>{{ t('uploadIcon') }}</span>
+                </button>
+              </div>
             } @else {
               <div class="icon-selected">
                 <div class="icon-preview">
-                  <app-icon-display [icon]="selectedIcon" size="16px" />
+                  <app-icon-display [icon]="selectedIcon" size="20px" />
                 </div>
                 <span class="icon-value">
                   @if (selectedIcon.type === 'PRIME_NG') {
                     {{ selectedIcon.value }}
+                  } @else if (selectedIcon.type === 'CUSTOM_IMAGE') {
+                    {{ t('customImage') }}
                   } @else {
                     {{ t('customSvg') }}
                   }
@@ -70,6 +82,19 @@
                 </button>
               </div>
             }
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field form-field-full">
+            <label>{{ t('descriptionLabel') }}</label>
+            <textarea
+              pInputText
+              [(ngModel)]="description"
+              [placeholder]="t('descriptionPlaceholder')"
+              class="description-textarea"
+              rows="3"
+            ></textarea>
           </div>
         </div>
       </section>

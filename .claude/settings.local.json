@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find F:/kutubxona/ung_library/booklore-api/src -type f -name *Library* -o -name *library*)",
+      "Bash(xargs grep:*)",
+      "Bash(docker compose:*)",
+      "Bash(find F:/kutubxona/ung_library/booklore-ui/src -name *.png -o -name favicon*)",
+      "Bash(powershell -Command \":*)",
+      "Bash(grep -rn \"resetBookloreProgress\\\\|resetBookloreMessage\\\\|resettingBookloreProgress\\\\|supportBookLore\\\\|syncWithBooklore\\\\|bulkResetBooklore\\\\|progressResetBooklore\" F:/kutubxona/ung_library/booklore-ui/src/app --include=*.ts --include=*.html)"
+    ]
+  }
+}

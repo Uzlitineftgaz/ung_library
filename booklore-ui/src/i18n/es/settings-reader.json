@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "Preferencias del lector",
     "description": "Configura los ajustes de lectura para tu biblioteca. Establece preferencias predeterminadas que sirvan como anulaciones para libros individuales, o permite que cada libro mantenga sus propios ajustes personalizados para formatos PDF, EPUB, FB2, MOBI, AZW3 y CBX.",
     "appMode": {

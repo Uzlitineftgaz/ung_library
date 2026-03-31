@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "Reader-Einstellungen",
     "description": "Konfigurieren Sie die Leseeinstellungen für Ihre Bibliothek. Legen Sie Standardeinstellungen fest, die als Überschreibungen für einzelne Bücher dienen, oder lassen Sie jedes Buch seine eigenen Einstellungen für PDF-, EPUB-, FB2-, MOBI-, AZW3- und CBX-Formate beibehalten.",
     "appMode": {

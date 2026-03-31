@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "OPDS-configuratie",
     "description": "Beheer uw OPDS-inloggegevens en bepaal hoe uw boekcollectie wordt gedeeld met lees-apps. Standaard worden alle bibliotheken waartoe u toegang hebt opgenomen in de OPDS-feed.",
     "server": {
@@ -7,7 +7,7 @@
         "opdsLabel": "OPDS Server",
         "opdsDesc": "Schakel de OPDS-server in om uw boekcollectie te benaderen via OPDS-compatibele lees-apps zoals KOReader, Moon+ Reader, etc.",
         "komgaLabel": "Komga API",
-        "komgaDesc": "Schakel de Komga-compatibele API in om Komga-clients (Tachiyomi, Komelia, etc.) te gebruiken met Booklore. Gebruikt dezelfde OPDS-gebruikersaccounts voor authenticatie.",
+        "komgaDesc": "Schakel de Komga-compatibele API in om Komga-clients (Tachiyomi, Komelia, etc.) te gebruiken met UngLibrary. Gebruikt dezelfde OPDS-gebruikersaccounts voor authenticatie.",
         "groupUnknownLabel": "Onbekende reeksen groeperen",
         "groupUnknownDesc": "",
         "enabled": "",

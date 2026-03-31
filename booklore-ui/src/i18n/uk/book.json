@@ -1,4 +1,4 @@
-{
+﻿{
     "browser": {
         "confirm": {
             "deleteMessage": "Ви впевнені, що хочете видалити {{ count }} кн.?\n\nЦе назавжди видалить файли книг із вашої файлової системи.\n\nЦю дію неможливо скасувати.",
@@ -92,7 +92,7 @@
             "moreActions": "Більше дій",
             "organizeFile": "Організувати файл",
             "readStatus": "Статус читання",
-            "resetBookloreProgress": "Скинути прогрес у Booklore",
+            "resetUngLibraryProgress": "Скинути прогрес у UngLibrary",
             "resetKOReaderProgress": "Скинути прогрес у KOReader",
             "book": "Книга",
             "loading": "Завантаження..."
@@ -116,10 +116,10 @@
             "readStatusFailedSummary": "Не вдалося оновити",
             "readStatusFailedDetail": "Не вдалося оновити статус читання.",
             "progressResetSummary": "Прогрес скинуто",
-            "progressResetBookloreDetail": "Прогрес читання у Booklore скинуто.",
+            "progressResetUngLibraryDetail": "Прогрес читання у UngLibrary скинуто.",
             "progressResetKOReaderDetail": "Прогрес читання у KOReader скинуто.",
             "progressResetFailedSummary": "Не вдалося",
-            "progressResetBookloreFailedDetail": "Не вдалося скинути прогрес у Booklore.",
+            "progressResetUngLibraryFailedDetail": "Не вдалося скинути прогрес у UngLibrary.",
             "progressResetKOReaderFailedDetail": "Не вдалося скинути прогрес у KOReader.",
             "coverRegenSuccessSummary": "Успішно",
             "coverRegenSuccessDetail": "Розпочато регенерацію обкладинки",
@@ -201,7 +201,7 @@
             "setContentRating": "Встановити рейтинг контенту",
             "clearContentRating": "Очистити рейтинг контенту",
             "removeFromAllShelves": "Прибрати з усіх полиць",
-            "resetBookloreProgress": "Скинути прогрес у Booklore",
+            "resetUngLibraryProgress": "Скинути прогрес у UngLibrary",
             "resetKOReaderProgress": "Скинути прогрес у KOReader"
         },
         "confirm": {
@@ -217,7 +217,7 @@
             "clearContentRatingHeader": "Підтвердити очищення рейтингу контенту",
             "unshelveMessage": "Ви впевнені, що хочете вилучити {{ count }} кн. з УСІХ полиць?",
             "unshelveHeader": "Підтвердити вилучення з полиць",
-            "resetBookloreMessage": "Ви впевнені, що хочете скинути прогрес читання Booklore для {{ count }} кн.?",
+            "resetUngLibraryMessage": "Ви впевнені, що хочете скинути прогрес читання UngLibrary для {{ count }} кн.?",
             "resetKOReaderMessage": "Ви впевнені, що хочете скинути прогрес читання KOReader для {{ count }} кн.?",
             "resetHeader": "Підтвердити скидання"
         },
@@ -242,7 +242,7 @@
             "unshelveSuccessDetail": "Книги прибрано з усіх полиць",
             "unshelveFailedDetail": "Не вдалося оновити книжкові полиці",
             "progressResetSummary": "Прогрес скинуто",
-            "bookloreProgressResetDetail": "Прогрес читання в Booklore скинуто.",
+            "bookloreProgressResetDetail": "Прогрес читання в UngLibrary скинуто.",
             "koreaderProgressResetDetail": "Прогрес читання в KOReader скинуто.",
             "failedSummary": "Не вдалося",
             "progressResetFailedDetail": "Не вдалося скинути прогрес."
@@ -254,14 +254,15 @@
             "settingContentRating": "Встановлення рейтингу контенту для {{ count }} кн...",
             "clearingContentRating": "Очищення рейтингу контенту для {{ count }} кн...",
             "removingFromShelves": "Вилучення {{ count }} кн. з полиць...",
-            "resettingBookloreProgress": "Скидання прогресу Booklore для {{ count }} кн...",
+            "resettingUngLibraryProgress": "Скидання прогресу UngLibrary для {{ count }} кн...",
             "resettingKOReaderProgress": "Скидання прогресу KOReader для {{ count }} кн..."
         }
     },
     "shelfMenuService": {
         "library": {
             "optionsLabel": "Опції",
-            "addPhysicalBook": "Додати паперову книгу",
+            "addSubLibrary": "Add Sub-Library",
+      "addPhysicalBook": "Додати паперову книгу",
             "editLibrary": "Редагувати бібліотеку",
             "rescanLibrary": "Повторно сканувати бібліотеку",
             "customFetchMetadata": "Налаштовуване отримання метаданих",

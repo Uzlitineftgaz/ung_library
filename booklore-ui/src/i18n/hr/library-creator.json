@@ -1,6 +1,7 @@
-{
+﻿{
     "creator": {
         "titleNew": "Nova zbirka",
+    "titleNewSub": "New Sub-Library",
         "titleEdit": "Uredi knjižnicu",
         "subtitle": "Konfigurirajte svoju kolekciju knjiga",
         "libraryDetails": "Detalji zbirke",

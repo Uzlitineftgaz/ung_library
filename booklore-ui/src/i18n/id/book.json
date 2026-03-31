@@ -1,4 +1,4 @@
-{
+﻿{
     "browser": {
         "confirm": {
             "deleteMessage": "Anda yakin ingin menghapus {{ count }} buku?\n\nIni akan menghapus buku dari sistem file Anda selamanya.\n\nTindakan ini tidak dapat dibatalkan.",
@@ -92,7 +92,7 @@
             "moreActions": "",
             "organizeFile": "",
             "readStatus": "",
-            "resetBookloreProgress": "",
+            "resetUngLibraryProgress": "",
             "resetKOReaderProgress": "",
             "book": "",
             "loading": ""
@@ -116,10 +116,10 @@
             "readStatusFailedSummary": "",
             "readStatusFailedDetail": "",
             "progressResetSummary": "",
-            "progressResetBookloreDetail": "",
+            "progressResetUngLibraryDetail": "",
             "progressResetKOReaderDetail": "",
             "progressResetFailedSummary": "",
-            "progressResetBookloreFailedDetail": "",
+            "progressResetUngLibraryFailedDetail": "",
             "progressResetKOReaderFailedDetail": "",
             "coverRegenSuccessSummary": "",
             "coverRegenSuccessDetail": "",
@@ -200,7 +200,7 @@
             "setContentRating": "",
             "clearContentRating": "",
             "removeFromAllShelves": "",
-            "resetBookloreProgress": "",
+            "resetUngLibraryProgress": "",
             "resetKOReaderProgress": ""
         },
         "confirm": {
@@ -216,7 +216,7 @@
             "clearContentRatingHeader": "",
             "unshelveMessage": "",
             "unshelveHeader": "",
-            "resetBookloreMessage": "",
+            "resetUngLibraryMessage": "",
             "resetKOReaderMessage": "",
             "resetHeader": ""
         },
@@ -253,14 +253,15 @@
             "settingContentRating": "",
             "clearingContentRating": "",
             "removingFromShelves": "",
-            "resettingBookloreProgress": "",
+            "resettingUngLibraryProgress": "",
             "resettingKOReaderProgress": ""
         }
     },
     "shelfMenuService": {
         "library": {
             "optionsLabel": "",
-            "addPhysicalBook": "",
+            "addSubLibrary": "Add Sub-Library",
+      "addPhysicalBook": "",
             "editLibrary": "",
             "rescanLibrary": "",
             "customFetchMetadata": "",

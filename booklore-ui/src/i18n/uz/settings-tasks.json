@@ -1,4 +1,4 @@
-{
+﻿{
   "title": "Tizim vazifalari menejeri",
   "description": "Kutubxona texnik xizmati, metama'lumotlar yangilanishi va kesh tozalash uchun avtomatlashtirilgan tizim vazifalarini boshqaring. Takrorlanuvchi operatsiyalarni <a href=\"https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"cron-link\">Spring cron ifodalari</a> yordamida rejalashtiring.",
   "systemTasks": {

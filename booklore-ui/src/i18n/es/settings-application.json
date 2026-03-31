@@ -1,6 +1,6 @@
-{
+﻿{
     "title": "Preferencias globales",
-    "description": "Configura los ajustes globales de tu instancia de Booklore, incluyendo el manejo de imágenes de portada, preferencias de búsqueda y límites de carga de archivos.",
+    "description": "Configura los ajustes globales de tu instancia de UngLibrary, incluyendo el manejo de imágenes de portada, preferencias de búsqueda y límites de carga de archivos.",
     "covers": {
         "sectionTitle": "Imagen de portada del libro",
         "regenerate": "Regenerar portadas",
@@ -43,7 +43,7 @@
     "telemetry": {
         "sectionTitle": "Telemetría",
         "enableTelemetry": "Habilitar telemetría",
-        "telemetryDesc": "Ayuda a mejorar Booklore compartiendo estadísticas de uso anónimas. Estos datos permiten a los desarrolladores ver qué funciones se usan más, identificar errores y detectar problemas de rendimiento para saber en qué trabajar a continuación. Nunca se envía información personal, contenido de libros ni datos identificables. Los datos se envían al servidor de Booklore automáticamente una vez cada 24 horas. Es completamente seguro y muy útil para los desarrolladores."
+        "telemetryDesc": "Ayuda a mejorar UngLibrary compartiendo estadísticas de uso anónimas. Estos datos permiten a los desarrolladores ver qué funciones se usan más, identificar errores y detectar problemas de rendimiento para saber en qué trabajar a continuación. Nunca se envía información personal, contenido de libros ni datos identificables. Los datos se envían al servidor de UngLibrary automáticamente una vez cada 24 horas. Es completamente seguro y muy útil para los desarrolladores."
     },
     "settingsSaved": "Ajustes guardados",
     "settingsSavedDetail": "¡Los ajustes se guardaron correctamente!",

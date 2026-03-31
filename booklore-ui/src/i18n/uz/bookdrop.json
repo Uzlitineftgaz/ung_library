@@ -1,4 +1,4 @@
-{
+﻿{
   "bulkEdit": {
     "infoBanner": "<strong>{{ fileCount }}</strong> ta tanlangan faylga qo‘llanadigan maydonlarni tanlang. Faqat belgilangan maydonlar yangilanadi.",
     "textFieldsTitle": "Matn maydonlari",

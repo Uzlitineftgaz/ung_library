@@ -1,4 +1,4 @@
-{
+﻿{
     "topbar": {
         "bookdrop": "",
         "createNewLibrary": "",
@@ -10,7 +10,7 @@
         "profile": "",
         "logout": "",
         "language": "",
-        "supportBookLore": "",
+        "supportUngLibrary": "",
         "notificationAriaLabel": "",
         "createLibrary": "",
         "stats": "",

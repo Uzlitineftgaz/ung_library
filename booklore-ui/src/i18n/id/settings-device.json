@@ -1,4 +1,4 @@
-{
+﻿{
     "accessRestricted": "Akses Dibatasi",
     "contactAdmin": "Silakan hubungi pengelola Anda untuk meminta izin.",
     "copied": "Disalin",
@@ -12,8 +12,8 @@
         "syncConfigDesc": "",
         "enableSync": "",
         "enableSyncDesc": "",
-        "syncWithBooklore": "",
-        "syncWithBookloreDesc": "",
+        "syncWithUngLibrary": "",
+        "syncWithUngLibraryDesc": "",
         "apiPath": "",
         "apiPathDesc": "",
         "username": "",

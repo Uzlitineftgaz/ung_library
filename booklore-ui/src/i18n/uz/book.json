@@ -1,4 +1,4 @@
-{
+﻿{
   "browser": {
     "confirm": {
       "deleteMessage": "Haqiqatan ham {{ count }} kitob(lar)ni o'chirmoqchimisiz?\n\nBu kitob fayllarini sizning fayl tizimingizdan butunlay olib tashlaydi.\n\nBu harakatni bekor qilib bo'lmaydi.",
@@ -48,7 +48,9 @@
       "noBooks": "Bu to'plamda kitoblar yo'q!",
       "failedLibrary": "Kutubxona kitoblarini yuklab bo'lmadi!",
       "failedShelf": "Javon kitoblarini yuklab bo'lmadi!",
-      "activeFilters": "{{ count }} Faol filtrlar"
+      "activeFilters": "{{ count }} Faol filtrlar",
+      "subLibraries": "Kutubxonalar",
+      "books": "Kitoblar"
     },
     "tooltip": {
       "clearFilters": "Qo'llanilgan filtrlarini tozalash",
@@ -92,7 +94,7 @@
       "moreActions": "Ko'proq harakatlar",
       "organizeFile": "Faylni tartibga solish",
       "readStatus": "O'qish holati",
-      "resetBookloreProgress": "Booklore progressini tiklash",
+      "resetUngLibraryProgress": "UngLibrary progressini tiklash",
       "resetKOReaderProgress": "KOReader progressini tiklash",
       "book": "Kitob",
       "loading": "Yuklanmoqda..."
@@ -116,10 +118,10 @@
       "readStatusFailedSummary": "Yangilanish muvaffaqiyatsiz",
       "readStatusFailedDetail": "O'qish holatini yangilab bo'lmadi.",
       "progressResetSummary": "Progress tiklandi",
-      "progressResetBookloreDetail": "Booklore o'qish progressi tiklandi.",
+      "progressResetUngLibraryDetail": "UngLibrary o'qish progressi tiklandi.",
       "progressResetKOReaderDetail": "KOReader o'qish progressi tiklandi.",
       "progressResetFailedSummary": "Muvaffaqiyatsiz",
-      "progressResetBookloreFailedDetail": "Booklore progressini tiklab bo'lmadi.",
+      "progressResetUngLibraryFailedDetail": "UngLibrary progressini tiklab bo'lmadi.",
       "progressResetKOReaderFailedDetail": "KOReader progressini tiklab bo'lmadi.",
       "coverRegenSuccessSummary": "Muvaffaqiyat",
       "coverRegenSuccessDetail": "Muqova qayta yaratish boshlandi",
@@ -201,7 +203,7 @@
       "setContentRating": "Kontent reytingini belgilash",
       "clearContentRating": "Kontent reytingini tozalash",
       "removeFromAllShelves": "Barcha javonlardan olib tashlash",
-      "resetBookloreProgress": "Booklore progressini tiklash",
+      "resetUngLibraryProgress": "UngLibrary progressini tiklash",
       "resetKOReaderProgress": "KOReader progressini tiklash"
     },
     "confirm": {
@@ -217,7 +219,7 @@
       "clearContentRatingHeader": "Kontent reytingini tozalashni tasdiqlash",
       "unshelveMessage": "Haqiqatan ham {{ count }} kitob(lar)ni barcha javonlaridan olib tashlamoqchimisiz?",
       "unshelveHeader": "Javondan chiqarishni tasdiqlash",
-      "resetBookloreMessage": "Haqiqatan ham {{ count }} kitob(lar) uchun Booklore o'qish progressini tiklamoqchimisiz?",
+      "resetUngLibraryMessage": "Haqiqatan ham {{ count }} kitob(lar) uchun UngLibrary o'qish progressini tiklamoqchimisiz?",
       "resetKOReaderMessage": "Haqiqatan ham {{ count }} kitob(lar) uchun KOReader o'qish progressini tiklamoqchimisiz?",
       "resetHeader": "Tiklashni tasdiqlash"
     },
@@ -242,7 +244,7 @@
       "unshelveSuccessDetail": "Kitoblar barcha javonlardan olib tashlandi",
       "unshelveFailedDetail": "Kitob javonlarini yangilab bo'lmadi",
       "progressResetSummary": "Progress tiklandi",
-      "bookloreProgressResetDetail": "Booklore o'qish progressi tiklandi.",
+      "bookloreProgressResetDetail": "UngLibrary o'qish progressi tiklandi.",
       "koreaderProgressResetDetail": "KOReader o'qish progressi tiklandi.",
       "failedSummary": "Muvaffaqiyatsiz",
       "progressResetFailedDetail": "Progressni tiklab bo'lmadi."
@@ -254,13 +256,14 @@
       "settingContentRating": "{{ count }} kitob(lar) uchun kontent reytingini belgilash...",
       "clearingContentRating": "{{ count }} kitob(lar) uchun kontent reytingini tozalash...",
       "removingFromShelves": "{{ count }} kitob(lar)ni javonlardan olib tashlash...",
-      "resettingBookloreProgress": "{{ count }} kitob(lar) uchun Booklore progressini tiklash...",
+      "resettingUngLibraryProgress": "{{ count }} kitob(lar) uchun UngLibrary progressini tiklash...",
       "resettingKOReaderProgress": "{{ count }} kitob(lar) uchun KOReader progressini tiklash..."
     }
   },
   "shelfMenuService": {
     "library": {
       "optionsLabel": "Variantlar",
+      "addSubLibrary": "Ichki kutubxona qo'shish",
       "addPhysicalBook": "Jismoniy kitob qo'shish",
       "bulkIsbnImport": "ISBNlarni fayldan import qilish",
       "editLibrary": "Kutubxonani tahrirlash",

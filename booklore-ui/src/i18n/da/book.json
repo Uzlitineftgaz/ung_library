@@ -1,4 +1,4 @@
-{
+﻿{
     "browser": {
         "confirm": {
             "deleteMessage": "",
@@ -92,7 +92,7 @@
             "moreActions": "",
             "organizeFile": "",
             "readStatus": "",
-            "resetBookloreProgress": "",
+            "resetUngLibraryProgress": "",
             "resetKOReaderProgress": "",
             "book": "",
             "loading": ""
@@ -116,10 +116,10 @@
             "readStatusFailedSummary": "",
             "readStatusFailedDetail": "",
             "progressResetSummary": "",
-            "progressResetBookloreDetail": "",
+            "progressResetUngLibraryDetail": "",
             "progressResetKOReaderDetail": "",
             "progressResetFailedSummary": "",
-            "progressResetBookloreFailedDetail": "",
+            "progressResetUngLibraryFailedDetail": "",
             "progressResetKOReaderFailedDetail": "",
             "coverRegenSuccessSummary": "",
             "coverRegenSuccessDetail": "",
@@ -201,7 +201,7 @@
             "setContentRating": "",
             "clearContentRating": "",
             "removeFromAllShelves": "",
-            "resetBookloreProgress": "",
+            "resetUngLibraryProgress": "",
             "resetKOReaderProgress": ""
         },
         "confirm": {
@@ -217,7 +217,7 @@
             "clearContentRatingHeader": "",
             "unshelveMessage": "",
             "unshelveHeader": "",
-            "resetBookloreMessage": "",
+            "resetUngLibraryMessage": "",
             "resetKOReaderMessage": "",
             "resetHeader": ""
         },
@@ -254,14 +254,15 @@
             "settingContentRating": "",
             "clearingContentRating": "",
             "removingFromShelves": "",
-            "resettingBookloreProgress": "",
+            "resettingUngLibraryProgress": "",
             "resettingKOReaderProgress": ""
         }
     },
     "shelfMenuService": {
         "library": {
             "optionsLabel": "",
-            "addPhysicalBook": "",
+            "addSubLibrary": "Add Sub-Library",
+      "addPhysicalBook": "",
             "bulkIsbnImport": "",
             "editLibrary": "",
             "rescanLibrary": "",

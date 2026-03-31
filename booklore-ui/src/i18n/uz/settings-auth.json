@@ -1,4 +1,4 @@
-{
+﻿{
   "title": "OIDC sozlamalari",
   "description": "Authentik, Authelia yoki Pocket ID kabi tashqi identifikatsiya provayderlari bilan bitta kirish uchun OpenID Connect (OIDC) ni sozlang.",
   "methods": {
@@ -28,11 +28,11 @@
     "clientSecretPlaceholder": "Sizning OIDC klient siringiz",
     "clientSecretHint": "Maxfiy klientlar uchun talab qilinadi. Faqat PKCE dan foydalanadigan ochiq klientlar uchun bo'sh qoldiring.",
     "issuerUri": "Issuer URI",
-    "issuerPlaceholder": "masalan, https://auth.example.com/realms/booklore",
+    "issuerPlaceholder": "masalan, https://auth.example.com/realms/unglibrary",
     "scope": "Scopes",
     "scopeHint": "OIDC avtorizatsiya so'rovida yuboriladigan scopes. Standartdan foydalanish uchun bo'sh qoldiring.",
     "claimMappings": "Claim xaritalari",
-    "claimDesc": "OIDC token claimlarini Booklore foydalanuvchi maydonlariga xaritaga soling. Bu sizning provayderingiz token claimlariga mos kelishi kerak.",
+    "claimDesc": "OIDC token claimlarini UngLibrary foydalanuvchi maydonlariga xaritaga soling. Bu sizning provayderingiz token claimlariga mos kelishi kerak.",
     "usernameClaim": "Foydalanuvchi nomi claim",
     "usernamePlaceholder": "masalan, preferred_username",
     "emailClaim": "Email claim",
@@ -53,7 +53,7 @@
     "autoLabel": "Avtomatik foydalanuvchi ta'minoti",
     "autoEnabled": "Yoqilgan",
     "autoDisabled": "O'chirilgan",
-    "autoDesc": "Yoqilganda, yangi foydalanuvchilar birinchi OIDC kirishda quyidagi ruxsatlar bilan avtomatik yaratiladi. O'chirilganda, foydalanuvchilar OIDC orqali kirishdan oldin Booklore da qo'lda yaratilishi kerak.",
+    "autoDesc": "Yoqilganda, yangi foydalanuvchilar birinchi OIDC kirishda quyidagi ruxsatlar bilan avtomatik yaratiladi. O'chirilganda, foydalanuvchilar OIDC orqali kirishdan oldin UngLibrary da qo'lda yaratilishi kerak.",
     "linkLocalLabel": "Mavjud mahalliy hisoblarni bog'lash",
     "linkLocalDesc": "Yoqilganda, mavjud mahalliy yaratilgan foydalanuvchilar foydalanuvchi nomlari mos kelganda birinchi OIDC kirishda OIDC identifikatsiyasiga avtomatik bog'lanadi. O'chirilganda, faqat OIDC orqali yaratilgan foydalanuvchilar foydalanuvchi nomi bo'yicha mos kelishi mumkin.",
     "linkLocalWarning": "Barcha mavjud foydalanuvchilar kamida bir marta OIDC orqali kirgandan keyin buni o'chirishni o'ylab ko'ring. Buni yoqib qoldirish sizning OIDC provayderingizda mos keladigan foydalanuvchi nomiga ega har qanday kishiga mahalliy hisobni egallashga imkon beradi.",
@@ -64,7 +64,7 @@
   },
   "groupMapping": {
     "sectionTitle": "Guruh xaritasi",
-    "sectionDesc": "OIDC provayder guruhlarini Booklore ruxsatlari va kutubxona kirishiga xaritaga soling. Foydalanuvchilarning ruxsatlari ularning guruh a'zoligi asosida sinxronlanadi.",
+    "sectionDesc": "OIDC provayder guruhlarini UngLibrary ruxsatlari va kutubxona kirishiga xaritaga soling. Foydalanuvchilarning ruxsatlari ularning guruh a'zoligi asosida sinxronlanadi.",
     "syncModeLabel": "Guruh sinx rejimi",
     "syncModeHint": "Kirishda OIDC guruhlari foydalanuvchi ruxsatlariga qanday sinxronlanishini boshqaradi.",
     "addMapping": "Xarita qo'shish",
@@ -76,7 +76,7 @@
     "addTitle": "Guruh xaritasi qo'shish",
     "editTitle": "Guruh xaritasi tahrirlash",
     "groupClaimLabel": "Guruh claim qiymati",
-    "groupClaimPlaceholder": "masalan, booklore-admins",
+    "groupClaimPlaceholder": "masalan, unglibrary-admins",
     "descriptionLabel": "Tavsif",
     "descriptionPlaceholder": "Ixtiyoriy tavsif",
     "adminLabel": "Admin berish",

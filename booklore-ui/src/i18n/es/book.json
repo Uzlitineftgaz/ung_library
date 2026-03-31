@@ -1,4 +1,4 @@
-{
+﻿{
     "browser": {
         "confirm": {
             "deleteMessage": "¿Estás seguro de que deseas eliminar {{ count }} libro(s)?\n\nEsto eliminará permanentemente los archivos de libros de tu sistema de archivos.\n\nEsta acción no se puede deshacer.",
@@ -92,7 +92,7 @@
             "moreActions": "Más acciones",
             "organizeFile": "Organizar archivo",
             "readStatus": "Estado de lectura",
-            "resetBookloreProgress": "Restablecer progreso de Booklore",
+            "resetUngLibraryProgress": "Restablecer progreso de UngLibrary",
             "resetKOReaderProgress": "Restablecer progreso de KOReader",
             "book": "Libro",
             "loading": "Cargando..."
@@ -116,10 +116,10 @@
             "readStatusFailedSummary": "Error al actualizar",
             "readStatusFailedDetail": "No se pudo actualizar el estado de lectura.",
             "progressResetSummary": "Progreso restablecido",
-            "progressResetBookloreDetail": "El progreso de lectura de Booklore ha sido restablecido.",
+            "progressResetUngLibraryDetail": "El progreso de lectura de UngLibrary ha sido restablecido.",
             "progressResetKOReaderDetail": "El progreso de lectura de KOReader ha sido restablecido.",
             "progressResetFailedSummary": "Error",
-            "progressResetBookloreFailedDetail": "No se pudo restablecer el progreso de Booklore.",
+            "progressResetUngLibraryFailedDetail": "No se pudo restablecer el progreso de UngLibrary.",
             "progressResetKOReaderFailedDetail": "No se pudo restablecer el progreso de KOReader.",
             "coverRegenSuccessSummary": "Correcto",
             "coverRegenSuccessDetail": "Regeneración de portada iniciada",
@@ -201,7 +201,7 @@
             "setContentRating": "Establecer clasificación de contenido",
             "clearContentRating": "Borrar clasificación de contenido",
             "removeFromAllShelves": "Eliminar de todos los estantes",
-            "resetBookloreProgress": "Restablecer progreso de Booklore",
+            "resetUngLibraryProgress": "Restablecer progreso de UngLibrary",
             "resetKOReaderProgress": "Restablecer progreso de KOReader"
         },
         "confirm": {
@@ -217,7 +217,7 @@
             "clearContentRatingHeader": "Confirmar borrado de clasificación de contenido",
             "unshelveMessage": "¿Estás seguro de que deseas eliminar {{ count }} libro(s) de TODOS sus estantes?",
             "unshelveHeader": "Confirmar eliminación de estantes",
-            "resetBookloreMessage": "¿Estás seguro de que deseas restablecer el progreso de lectura de Booklore para {{ count }} libro(s)?",
+            "resetUngLibraryMessage": "¿Estás seguro de que deseas restablecer el progreso de lectura de UngLibrary para {{ count }} libro(s)?",
             "resetKOReaderMessage": "¿Estás seguro de que deseas restablecer el progreso de lectura de KOReader para {{ count }} libro(s)?",
             "resetHeader": "Confirmar restablecimiento"
         },
@@ -242,7 +242,7 @@
             "unshelveSuccessDetail": "Libros eliminados de todos los estantes",
             "unshelveFailedDetail": "Error al actualizar los estantes de libros",
             "progressResetSummary": "Progreso restablecido",
-            "bookloreProgressResetDetail": "El progreso de lectura de Booklore ha sido restablecido.",
+            "bookloreProgressResetDetail": "El progreso de lectura de UngLibrary ha sido restablecido.",
             "koreaderProgressResetDetail": "El progreso de lectura de KOReader ha sido restablecido.",
             "failedSummary": "Error",
             "progressResetFailedDetail": "No se pudo restablecer el progreso."
@@ -254,14 +254,15 @@
             "settingContentRating": "Estableciendo clasificación de contenido para {{ count }} libro(s)...",
             "clearingContentRating": "Borrando clasificación de contenido de {{ count }} libro(s)...",
             "removingFromShelves": "Eliminando {{ count }} libro(s) de los estantes...",
-            "resettingBookloreProgress": "Restableciendo progreso de Booklore para {{ count }} libro(s)...",
+            "resettingUngLibraryProgress": "Restableciendo progreso de UngLibrary para {{ count }} libro(s)...",
             "resettingKOReaderProgress": "Restableciendo progreso de KOReader para {{ count }} libro(s)..."
         }
     },
     "shelfMenuService": {
         "library": {
             "optionsLabel": "Opciones",
-            "addPhysicalBook": "Añadir libro físico",
+            "addSubLibrary": "Add Sub-Library",
+      "addPhysicalBook": "Añadir libro físico",
             "bulkIsbnImport": "Importar ISBNs desde archivo",
             "editLibrary": "Editar biblioteca",
             "rescanLibrary": "Re-escanear biblioteca",

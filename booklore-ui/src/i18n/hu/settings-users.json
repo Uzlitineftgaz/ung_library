@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "",
     "description": "",
     "currentUsers": {
@@ -70,7 +70,7 @@
         "koreaderSync": "",
         "koboSync": "",
         "opdsFeedAccess": "",
-        "bulkResetBooklore": "",
+        "bulkResetUngLibrary": "",
         "bulkResetKoreader": "",
         "bulkResetReadStatus": ""
     },

@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "Gestore attività di sistema",
     "description": "Gestisci le attività automatizzate del sistema per la manutenzione della libreria, l'aggiornamento dei metadati e la pulizia della cache. Pianifica operazioni ricorrenti usando <a href=\"https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"cron-link\">espressioni cron di Spring</a>.",
     "systemTasks": {

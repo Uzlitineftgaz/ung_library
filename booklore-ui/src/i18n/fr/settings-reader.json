@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "Préférences du lecteur",
     "description": "Configurez les paramètres de lecture pour votre bibliothèque. Définissez des préférences par défaut qui servent de remplacements pour les livres individuels, ou laissez chaque livre conserver ses propres paramètres pour les formats PDF, EPUB, FB2, MOBI, AZW3 et CBX.",
     "appMode": {

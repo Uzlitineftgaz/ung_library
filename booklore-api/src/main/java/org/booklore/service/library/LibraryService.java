@@ -88,6 +88,7 @@ public class LibraryService {
                 .orElseThrow(() -> ApiError.LIBRARY_NOT_FOUND.createException(libraryId));
 
         library.setName(request.getName());
+        library.setDescription(request.getDescription());
         library.setIcon(request.getIcon());
         library.setIconType(request.getIconType());
         library.setWatch(request.isWatch());
@@ -172,8 +173,15 @@ public class LibraryService {
         BookLoreUser bookLoreUser = authenticationService.getAuthenticatedUser();
         Optional<BookLoreUserEntity> user = userRepository.findById(bookLoreUser.getId());
 
+        LibraryEntity parent = null;
+        if (request.getParentId() != null) {
+            parent = libraryRepository.findById(request.getParentId())
+                    .orElseThrow(() -> ApiError.LIBRARY_NOT_FOUND.createException(request.getParentId()));
+        }
+
         LibraryEntity libraryEntity = LibraryEntity.builder()
                 .name(request.getName())
+                .description(request.getDescription())
                 .libraryPaths(
                         request.getPaths() == null || request.getPaths().isEmpty() ?
                                 Collections.emptyList() :
@@ -188,6 +196,7 @@ public class LibraryService {
                 .allowedFormats(request.getAllowedFormats())
                 .metadataSource(request.getMetadataSource())
                 .organizationMode(request.getOrganizationMode())
+                .parent(parent)
                 .users(List.of(user.get()))
                 .build();
 

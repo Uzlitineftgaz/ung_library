@@ -1,4 +1,4 @@
-{
+﻿{
     "main": {
         "title": "{{ name }} 的阅读统计",
         "customizeLayout": "自定义布局",

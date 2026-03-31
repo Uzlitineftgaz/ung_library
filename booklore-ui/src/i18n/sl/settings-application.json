@@ -1,6 +1,6 @@
-{
+﻿{
     "title": "Splošne nastavitve",
-    "description": "Konfiguriraj splošne nastavitve za svojo instanco Booklore, vključno z upravljanjem naslovnic, nastavitvami iskanja in omejitvami nalaganja datotek.",
+    "description": "Konfiguriraj splošne nastavitve za svojo instanco UngLibrary, vključno z upravljanjem naslovnic, nastavitvami iskanja in omejitvami nalaganja datotek.",
     "covers": {
         "sectionTitle": "Naslovnica knjige",
         "regenerate": "Ponovno ustvari naslovnice",
@@ -39,7 +39,7 @@
     "telemetry": {
         "sectionTitle": "Telemetrija",
         "enableTelemetry": "Omogoči telemetrijo",
-        "telemetryDesc": "Pomagaj izboljšati Booklore z deljenjem anonimnih statistik uporabe. Ti podatki razvijalcem omogočajo vpogled v to, katere funkcije so najbolj uporabljene, prepoznavanje hroščev in težav z zmogljivostjo. Osebni podatki, vsebina knjig ali kateri koli drugi identifikacijski podatki se nikoli ne pošiljajo. Podatki se samodejno pošljejo na strežnik Booklore enkrat na 24 ur. To je popolnoma varno in zelo v pomoč razvijalcem."
+        "telemetryDesc": "Pomagaj izboljšati UngLibrary z deljenjem anonimnih statistik uporabe. Ti podatki razvijalcem omogočajo vpogled v to, katere funkcije so najbolj uporabljene, prepoznavanje hroščev in težav z zmogljivostjo. Osebni podatki, vsebina knjig ali kateri koli drugi identifikacijski podatki se nikoli ne pošiljajo. Podatki se samodejno pošljejo na strežnik UngLibrary enkrat na 24 ur. To je popolnoma varno in zelo v pomoč razvijalcem."
     },
     "settingsSaved": "Nastavitve shranjene",
     "settingsSavedDetail": "Nastavitve so bile uspešno shranjene!",

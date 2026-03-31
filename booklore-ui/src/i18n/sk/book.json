@@ -1,4 +1,4 @@
-{
+﻿{
     "browser": {
         "confirm": {
             "deleteMessage": "Ste si istý, že chcete zmazať {{ count }} knihu/ knihy?\n\nTýmto sa trvalo odstránia súbory kníh z vášho súborového systému.\n\nTáto akcia sa nedá vrátiť späť.",
@@ -92,7 +92,7 @@
             "moreActions": "",
             "organizeFile": "",
             "readStatus": "",
-            "resetBookloreProgress": "",
+            "resetUngLibraryProgress": "",
             "resetKOReaderProgress": "",
             "book": "",
             "loading": ""
@@ -113,10 +113,10 @@
             "readStatusFailedSummary": "",
             "readStatusFailedDetail": "",
             "progressResetSummary": "",
-            "progressResetBookloreDetail": "",
+            "progressResetUngLibraryDetail": "",
             "progressResetKOReaderDetail": "",
             "progressResetFailedSummary": "",
-            "progressResetBookloreFailedDetail": "",
+            "progressResetUngLibraryFailedDetail": "",
             "progressResetKOReaderFailedDetail": "",
             "coverRegenSuccessSummary": "",
             "coverRegenSuccessDetail": "",
@@ -197,7 +197,7 @@
             "setContentRating": "",
             "clearContentRating": "",
             "removeFromAllShelves": "",
-            "resetBookloreProgress": "",
+            "resetUngLibraryProgress": "",
             "resetKOReaderProgress": ""
         },
         "confirm": {
@@ -213,7 +213,7 @@
             "clearContentRatingHeader": "",
             "unshelveMessage": "",
             "unshelveHeader": "",
-            "resetBookloreMessage": "",
+            "resetUngLibraryMessage": "",
             "resetKOReaderMessage": "",
             "resetHeader": ""
         },
@@ -250,14 +250,15 @@
             "settingContentRating": "",
             "clearingContentRating": "",
             "removingFromShelves": "",
-            "resettingBookloreProgress": "",
+            "resettingUngLibraryProgress": "",
             "resettingKOReaderProgress": ""
         }
     },
     "shelfMenuService": {
         "library": {
             "optionsLabel": "",
-            "addPhysicalBook": "",
+            "addSubLibrary": "Add Sub-Library",
+      "addPhysicalBook": "",
             "editLibrary": "",
             "rescanLibrary": "",
             "customFetchMetadata": "",

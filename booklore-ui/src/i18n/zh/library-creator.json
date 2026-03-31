@@ -1,6 +1,7 @@
-{
+﻿{
     "creator": {
         "titleNew": "新建书库",
+    "titleNewSub": "New Sub-Library",
         "titleEdit": "编辑书库",
         "subtitle": "配置您的书籍收藏",
         "libraryDetails": "书库详情",

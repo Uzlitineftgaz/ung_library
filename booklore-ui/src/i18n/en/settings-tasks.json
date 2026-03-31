@@ -1,4 +1,4 @@
-{
+﻿{
   "title": "System Task Manager",
   "description": "Manage automated system tasks for library maintenance, metadata refreshing, and cache cleanup. Schedule recurring operations using <a href=\"https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"cron-link\">Spring cron expressions</a>.",
   "systemTasks": {

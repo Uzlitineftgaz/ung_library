@@ -39,6 +39,16 @@ export class LibraryShelfMenuService {
         label: this.t.translate('book.shelfMenuService.library.optionsLabel'),
         items: [
           {
+            label: this.t.translate('book.shelfMenuService.library.addSubLibrary'),
+            icon: 'pi pi-sitemap',
+            command: () => {
+              this.dialogLauncherService.openSubLibraryCreateDialog(entity?.id as number);
+            }
+          },
+          {
+            separator: true
+          },
+          {
             label: this.t.translate('book.shelfMenuService.library.addPhysicalBook'),
             icon: 'pi pi-book',
             command: () => {

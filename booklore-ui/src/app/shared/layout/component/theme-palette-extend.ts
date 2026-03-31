@@ -3,6 +3,19 @@ import Aura from '@primeuix/themes/aura';
 type ColorPalette = Record<string, string>;
 
 const customPalettes: Record<string, ColorPalette> = {
+  ungBlue: {
+    50:  '#f0f9fe',
+    100: '#dcf1fd',
+    200: '#b3e4fa',
+    300: '#73cff6',
+    400: '#2cb4ec',
+    500: '#009eda',
+    600: '#0080b8',
+    700: '#006694',
+    800: '#005578',
+    900: '#004060',
+    950: '#002840'
+  },
   coralSunset: {
     50: '#fef7f0',
     100: '#feede1',

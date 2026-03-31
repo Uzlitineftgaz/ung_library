@@ -24,8 +24,29 @@
   @include auth.auth-logo;
 }
 
-.logo-icon {
-  @include auth.auth-logo-icon;
+.brand-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.875rem;
+}
+
+.brand-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
+  border-radius: 8px;
+  filter: drop-shadow(0 4px 16px rgba(0, 158, 218, 0.5));
+}
+
+.brand-name {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #ffffff 0%, var(--p-primary-color) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .login-title {

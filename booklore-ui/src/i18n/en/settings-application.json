@@ -1,6 +1,6 @@
-{
+﻿{
   "title": "Global Preferences",
-  "description": "Configure global settings for your Booklore instance, including cover image handling, search preferences, and file upload limits.",
+  "description": "Configure global settings for your UngLibrary instance, including cover image handling, search preferences, and file upload limits.",
   "covers": {
     "sectionTitle": "Book Cover Image",
     "regenerate": "Regenerate Covers",
@@ -43,7 +43,7 @@
   "telemetry": {
     "sectionTitle": "Telemetry",
     "enableTelemetry": "Enable Telemetry",
-    "telemetryDesc": "Help improve Booklore by sharing anonymous usage statistics. This data lets the developers see which features are most used, identify bugs, and spot performance issues so they know what to work on next. No personal information, book content, or any identifiable data is ever sent. Data is sent to the Booklore server automatically once every 24 hours. It's completely safe and very helpful to the developers."
+    "telemetryDesc": "Help improve UngLibrary by sharing anonymous usage statistics. This data lets the developers see which features are most used, identify bugs, and spot performance issues so they know what to work on next. No personal information, book content, or any identifiable data is ever sent. Data is sent to the UngLibrary server automatically once every 24 hours. It's completely safe and very helpful to the developers."
   },
   "settingsSaved": "Settings Saved",
   "settingsSavedDetail": "The settings were successfully saved!",

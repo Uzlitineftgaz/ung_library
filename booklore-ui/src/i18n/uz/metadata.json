@@ -1,4 +1,4 @@
-{
+﻿{
   "center": {
     "title": "Kitob tafsilotlari",
     "description": "Kitob metama'lumotlarini ko'rish va tahrirlash",
@@ -247,7 +247,7 @@
     "primaryBadge": "ASOSIY",
     "firstAuthorBadge": "BOSH MUALLIF",
     "physicalBadge": "JISMONIY",
-    "bookloreProgressLabel": "BookLore jarayoni:",
+    "bookloreProgressLabel": "UngLibrary jarayoni:",
     "metadataMatchLabel": "Metama'lumot mosligi:",
     "isbnLabel": "ISBN:",
     "readStatusLabel": "O'qish holati:",
@@ -406,7 +406,7 @@
     "exportBtn": "Sidecar'ga eksport qilish",
     "exportTooltip": "Joriy kitob metama'lumotlarini sidecar (.metadata.json) fayliga eksport qilish",
     "importBtn": "Sidecar'dan import qilish",
-    "importTooltip": "Sidecar faylidagi metama'lumotlarni BookLore'ga import qilish",
+    "importTooltip": "Sidecar faylidagi metama'lumotlarni UngLibrary'ga import qilish",
     "noSidecarTitle": "Sidecar fayli topilmadi",
     "noSidecarDescription": "Ushbu kitob uchun sidecar metama'lumotlar fayli mavjud emas. Uni yaratish uchun Eksport qilish tugmasidan foydalaning.",
     "generatedLabel": "Yaratilgan:",

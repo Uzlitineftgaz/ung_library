@@ -1,8 +1,8 @@
-{
+﻿{
   "offline": "Siz oflayn holatdasiz",
-  "loading": "Booklore yuklanmoqda…",
+  "loading": "UngLibrary yuklanmoqda…",
   "loadingDescription": "Iltimos, tayyorlash jarayonini kuting.",
-  "offlineLoadingDescription": "BookLore yuklanishi uchun serverga ulanish kerak.",
+  "offlineLoadingDescription": "UngLibrary yuklanishi uchun serverga ulanish kerak.",
   "offlineDescription": "Tarmog'ingizni tekshiring va qayta urinib ko'ring.",
   "connectionLost": "Internet aloqasi uzildi. Ba'zi funksiyalar ishlamasligi mumkin."
 }

@@ -10,7 +10,7 @@ services:
       - DATABASE_USERNAME=booklore
       - DATABASE_PASSWORD=booklore
       - REMOTE_DEBUG_ENABLED=true
-      - ALLOWED_ORIGINS=http://localhost:4200
+      - ALLOWED_ORIGINS=*
     stdin_open: true
     tty: true
     restart: unless-stopped

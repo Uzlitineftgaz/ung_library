@@ -7,9 +7,11 @@ export type OrganizationMode = 'BOOK_PER_FILE' | 'BOOK_PER_FOLDER' | 'AUTO_DETEC
 
 export interface Library {
   id?: number;
+  parentId?: number | null;
   name: string;
+  description?: string | null;
   icon?: string | null;
-  iconType?: 'PRIME_NG' | 'CUSTOM_SVG' | null;
+  iconType?: 'PRIME_NG' | 'CUSTOM_SVG' | 'CUSTOM_IMAGE' | null;
   watch: boolean;
   fileNamingPattern?: string;
   sort?: SortOption;

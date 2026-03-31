@@ -13,6 +13,8 @@ import {DomSanitizer, SafeHtml} from '@angular/platform-browser';
     @if (icon) {
       @if (icon.type === 'PRIME_NG') {
         <i [class]="getPrimeNgIconClass(icon.value)" [ngClass]="iconClass" [ngStyle]="getPrimeNgStyle()"></i>
+      } @else if (icon.type === 'CUSTOM_IMAGE') {
+        <img [src]="icon.value" [ngStyle]="getImageStyle()" [attr.alt]="alt" />
       } @else {
         <div
           class="svg-icon-inline"
@@ -116,6 +118,16 @@ export class IconDisplayComponent implements OnInit, OnChanges {
     return {
       width: this.size,
       height: this.size,
+      ...this.iconStyle
+    };
+  }
+
+  getImageStyle(): Record<string, string> {
+    return {
+      width: this.size,
+      height: this.size,
+      objectFit: 'contain',
+      borderRadius: '4px',
       ...this.iconStyle
     };
   }

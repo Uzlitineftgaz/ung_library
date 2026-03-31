@@ -1,4 +1,4 @@
-{
+﻿{
   "browser": {
     "confirm": {
       "deleteMessage": "Are you sure you want to delete {{ count }} book(s)?\n\nThis will permanently remove the book files from your filesystem.\n\nThis action cannot be undone.",
@@ -48,7 +48,9 @@
       "noBooks": "This collection has no books!",
       "failedLibrary": "Failed to load library's books!",
       "failedShelf": "Failed to load shelf's books!",
-      "activeFilters": "{{ count }} Active Filters"
+      "activeFilters": "{{ count }} Active Filters",
+      "subLibraries": "Sub-Libraries",
+      "books": "Books"
     },
     "tooltip": {
       "clearFilters": "Clear applied filters",
@@ -92,7 +94,7 @@
       "moreActions": "More Actions",
       "organizeFile": "Organize File",
       "readStatus": "Read Status",
-      "resetBookloreProgress": "Reset Booklore Progress",
+      "resetUngLibraryProgress": "Reset UngLibrary Progress",
       "resetKOReaderProgress": "Reset KOReader Progress",
       "book": "Book",
       "loading": "Loading..."
@@ -116,10 +118,10 @@
       "readStatusFailedSummary": "Update Failed",
       "readStatusFailedDetail": "Could not update read status.",
       "progressResetSummary": "Progress Reset",
-      "progressResetBookloreDetail": "Booklore reading progress has been reset.",
+      "progressResetUngLibraryDetail": "UngLibrary reading progress has been reset.",
       "progressResetKOReaderDetail": "KOReader reading progress has been reset.",
       "progressResetFailedSummary": "Failed",
-      "progressResetBookloreFailedDetail": "Could not reset Booklore progress.",
+      "progressResetUngLibraryFailedDetail": "Could not reset UngLibrary progress.",
       "progressResetKOReaderFailedDetail": "Could not reset KOReader progress.",
       "coverRegenSuccessSummary": "Success",
       "coverRegenSuccessDetail": "Cover regeneration started",
@@ -201,7 +203,7 @@
       "setContentRating": "Set Content Rating",
       "clearContentRating": "Clear Content Rating",
       "removeFromAllShelves": "Remove from all shelves",
-      "resetBookloreProgress": "Reset Booklore Progress",
+      "resetUngLibraryProgress": "Reset UngLibrary Progress",
       "resetKOReaderProgress": "Reset KOReader Progress"
     },
     "confirm": {
@@ -217,7 +219,7 @@
       "clearContentRatingHeader": "Confirm Clear Content Rating",
       "unshelveMessage": "Are you sure you want to remove {{ count }} book(s) from ALL their shelves?",
       "unshelveHeader": "Confirm Unshelve",
-      "resetBookloreMessage": "Are you sure you want to reset Booklore reading progress for {{ count }} book(s)?",
+      "resetUngLibraryMessage": "Are you sure you want to reset UngLibrary reading progress for {{ count }} book(s)?",
       "resetKOReaderMessage": "Are you sure you want to reset KOReader reading progress for {{ count }} book(s)?",
       "resetHeader": "Confirm Reset"
     },
@@ -242,7 +244,7 @@
       "unshelveSuccessDetail": "Books removed from all shelves",
       "unshelveFailedDetail": "Failed to update books shelves",
       "progressResetSummary": "Progress Reset",
-      "bookloreProgressResetDetail": "Booklore reading progress has been reset.",
+      "bookloreProgressResetDetail": "UngLibrary reading progress has been reset.",
       "koreaderProgressResetDetail": "KOReader reading progress has been reset.",
       "failedSummary": "Failed",
       "progressResetFailedDetail": "Could not reset progress."
@@ -254,13 +256,14 @@
       "settingContentRating": "Setting content rating for {{ count }} book(s)...",
       "clearingContentRating": "Clearing content rating for {{ count }} book(s)...",
       "removingFromShelves": "Removing {{ count }} book(s) from shelves...",
-      "resettingBookloreProgress": "Resetting Booklore progress for {{ count }} book(s)...",
+      "resettingUngLibraryProgress": "Resetting UngLibrary progress for {{ count }} book(s)...",
       "resettingKOReaderProgress": "Resetting KOReader progress for {{ count }} book(s)..."
     }
   },
   "shelfMenuService": {
     "library": {
       "optionsLabel": "Options",
+      "addSubLibrary": "Add Sub-Library",
       "addPhysicalBook": "Add Physical Book",
       "bulkIsbnImport": "Import ISBNs from File",
       "editLibrary": "Edit Library",

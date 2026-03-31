@@ -1,9 +1,9 @@
-{
+﻿{
     "title": "Wzorce nazewnictwa plików",
     "description": "Skonfiguruj automatyczną organizację plików za pomocą symboli zastępczych metadanych. Wzorce są stosowane podczas przesyłania, przenoszenia plików lub po aktualizacji metadanych.",
     "warning": {
         "title": "Uwaga dotycząca jakości metadanych:",
-        "text": "Nazewnictwo plików zależy całkowicie od metadanych przechowywanych w Booklore. Ta funkcja jest zalecana tylko dla wysoko jakościowych, starannie prowadzonych bibliotek z kompletnymi metadanymi."
+        "text": "Nazewnictwo plików zależy całkowicie od metadanych przechowywanych w UngLibrary. Ta funkcja jest zalecana tylko dla wysoko jakościowych, starannie prowadzonych bibliotek z kompletnymi metadanymi."
     },
     "defaultPattern": {
         "sectionTitle": "Domyślny wzorzec",

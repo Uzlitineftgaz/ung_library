@@ -10,5 +10,6 @@ import org.mapstruct.ReportingPolicy;
 public interface LibraryMapper {
 
     @Mapping(target = "paths", source = "libraryPaths")
+    @Mapping(target = "parentId", source = "parent.id")
     Library toLibrary(LibraryEntity libraryEntity);
 }

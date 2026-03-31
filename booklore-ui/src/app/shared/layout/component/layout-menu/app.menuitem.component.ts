@@ -176,7 +176,7 @@ export class AppMenuitemComponent implements OnInit, OnDestroy {
   }
 
   triggerLink() {
-    if (this.item.routerLink && !this.item.items && this.linkRef) {
+    if (this.item.routerLink && this.linkRef) {
       this.linkRef.nativeElement.click();
     }
   }

@@ -1,4 +1,4 @@
-{
+﻿{
     "title": "Configuration e-mail",
     "description": "Configurez les paramètres e-mail pour envoyer des livres directement à vos appareils ou destinataires. Configurez les fournisseurs e-mail (comme Gmail, Outlook ou des serveurs SMTP personnalisés) et gérez les adresses e-mail des destinataires.",
     "accessRestricted": "Accès restreint",

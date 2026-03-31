@@ -1,6 +1,7 @@
-{
+﻿{
     "creator": {
         "titleNew": "Нова бібліотека",
+    "titleNewSub": "New Sub-Library",
         "titleEdit": "Редагувати бібліотеку",
         "subtitle": "Налаштуйте свою колекцію книг",
         "libraryDetails": "Інформація про бібліотеку",
