@@ -125,7 +125,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    @Order(3)
+    @Order(4)
     public SecurityFilterChain koboSecurityChain(HttpSecurity http, KoboAuthFilter koboAuthFilter) throws Exception {
         http
                 .securityMatcher("/api/kobo/**")
@@ -137,7 +137,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    @Order(4)
+    @Order(5)
     public SecurityFilterChain coverJwtApiSecurityChain(HttpSecurity http, CoverJwtFilter coverJwtFilter) throws Exception {
         http
                 .securityMatcher("/api/v1/media/**")
@@ -156,7 +156,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    @Order(5)
+    @Order(6)
     public SecurityFilterChain customFontSecurityChain(HttpSecurity http, CustomFontJwtFilter customFontJwtFilter) throws Exception {
         http
                 .securityMatcher("/api/v1/custom-fonts/*/file")
@@ -171,7 +171,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    @Order(6)
+    @Order(7)
     public SecurityFilterChain epubStreamingSecurityChain(HttpSecurity http, EpubStreamingJwtFilter epubStreamingJwtFilter) throws Exception {
         http
                 .securityMatcher("/api/v1/epub/*/file/**")
@@ -186,7 +186,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    @Order(7)
+    @Order(8)
     public SecurityFilterChain audiobookStreamingSecurityChain(HttpSecurity http, AudiobookStreamingJwtFilter audiobookStreamingJwtFilter) throws Exception {
         http
                 .securityMatcher("/api/v1/audiobooks/*/stream/**", "/api/v1/audiobooks/*/track/*/stream/**", "/api/v1/audiobooks/*/cover")
@@ -201,7 +201,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    @Order(8)
+    @Order(9)
     public SecurityFilterChain jwtApiSecurityChain(HttpSecurity http) throws Exception {
         List<String> publicEndpoints = new ArrayList<>(Arrays.asList(COMMON_PUBLIC_ENDPOINTS));
         http
@@ -224,7 +224,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    @Order(9)
+    @Order(10)
     public SecurityFilterChain staticResourcesSecurityChain(HttpSecurity http) throws Exception {
         http
                 .csrf(AbstractHttpConfigurer::disable)
