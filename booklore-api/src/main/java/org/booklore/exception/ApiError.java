@@ -73,7 +73,14 @@ public enum ApiError {
     OIDC_INVALID_REDIRECT_URI(HttpStatus.BAD_REQUEST, "Invalid redirect URI"),
     OIDC_LOGOUT_REPLAY(HttpStatus.BAD_REQUEST, "Logout token has already been processed"),
     OIDC_LOGOUT_MISSING_JTI(HttpStatus.BAD_REQUEST, "Logout token missing required jti claim"),
-    OIDC_INVALID_STATE(HttpStatus.BAD_REQUEST, "Invalid or expired OIDC state parameter");
+    OIDC_INVALID_STATE(HttpStatus.BAD_REQUEST, "Invalid or expired OIDC state parameter"),
+
+    DEPARTMENT_NOT_FOUND(HttpStatus.NOT_FOUND, "Department not found with ID: %d"),
+    DEPARTMENT_MEMBER_NOT_FOUND(HttpStatus.NOT_FOUND, "Member not found in department"),
+    DEPARTMENT_MEMBER_ALREADY_EXISTS(HttpStatus.CONFLICT, "User is already a member of this department"),
+    DEPARTMENT_ACCESS_DENIED(HttpStatus.FORBIDDEN, "You do not have access to this department"),
+    DEPARTMENT_HEAD_REQUIRED(HttpStatus.BAD_REQUEST, "Department must have a head assigned"),
+    DEPARTMENT_CIRCULAR_REFERENCE(HttpStatus.BAD_REQUEST, "Cannot set a department as its own ancestor");
 
     private final HttpStatus status;
     private final String message;

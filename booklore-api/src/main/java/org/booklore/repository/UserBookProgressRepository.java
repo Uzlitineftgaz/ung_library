@@ -6,6 +6,7 @@ import org.booklore.model.dto.ProgressPercentDto;
 import org.booklore.model.dto.RatingDistributionDto;
 import org.booklore.model.dto.StatusDistributionDto;
 import org.booklore.model.entity.UserBookProgressEntity;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -196,4 +197,12 @@ public interface UserBookProgressRepository extends JpaRepository<UserBookProgre
             WHERE ubp.user.id = :userId
             """)
     List<ProgressPercentDto> findAllProgressPercentsByUser(@Param("userId") Long userId);
+
+    @Query("""
+            SELECT ubp.book.id FROM UserBookProgressEntity ubp
+            WHERE ubp.user.id = :userId
+              AND ubp.lastReadTime IS NOT NULL
+            ORDER BY ubp.lastReadTime DESC
+            """)
+    List<Long> findRecentlyReadBookIdsByUserId(@Param("userId") Long userId, Pageable pageable);
 }

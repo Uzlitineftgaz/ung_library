@@ -72,6 +72,35 @@ public class BookController {
         return ResponseEntity.ok(bookService.getBookDTOs(withDescription));
     }
 
+    @Operation(summary = "Get books by library ID", description = "Retrieve all books belonging to a specific library.")
+    @ApiResponses({
+            @ApiResponse(responseCode = "200", description = "Books returned successfully"),
+            @ApiResponse(responseCode = "403", description = "Access denied to this library"),
+            @ApiResponse(responseCode = "404", description = "Library not found")
+    })
+    @GetMapping("/library/{libraryId}")
+    public ResponseEntity<List<Book>> getBooksByLibraryId(
+            @Parameter(description = "ID of the library") @PathVariable Long libraryId) {
+        return ResponseEntity.ok(bookService.getBooksByLibraryId(libraryId));
+    }
+
+    @Operation(summary = "Get recently read books", description = "Retrieve the current user's most recently read books (up to 6).")
+    @ApiResponse(responseCode = "200", description = "Recently read books returned successfully")
+    @GetMapping("/recently-read")
+    public ResponseEntity<List<Book>> getRecentlyReadBooks(
+            @Parameter(description = "Maximum number of books to return (max 6)") @RequestParam(defaultValue = "6") @Max(6) @Min(1) int limit) {
+        return ResponseEntity.ok(bookService.getRecentlyReadBooks(limit));
+    }
+
+    @Operation(summary = "Get books sorted by Goodreads rating", description = "Retrieve books ordered by Goodreads rating descending, with pagination.")
+    @ApiResponse(responseCode = "200", description = "Books returned successfully")
+    @GetMapping("/by-rating")
+    public ResponseEntity<List<Book>> getBooksByRating(
+            @Parameter(description = "Page number (0-based)") @RequestParam(defaultValue = "0") @Min(0) int page,
+            @Parameter(description = "Number of books per page") @RequestParam(defaultValue = "20") @Min(1) @Max(100) int pageSize) {
+        return ResponseEntity.ok(bookService.getBooksSortedByRating(page, pageSize));
+    }
+
     @Operation(summary = "Get a book by ID", description = "Retrieve details of a specific book by its ID.")
     @ApiResponses({
             @ApiResponse(responseCode = "200", description = "Book details returned successfully"),

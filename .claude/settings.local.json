@@ -6,7 +6,20 @@
       "Bash(docker compose:*)",
       "Bash(find F:/kutubxona/ung_library/booklore-ui/src -name *.png -o -name favicon*)",
       "Bash(powershell -Command \":*)",
-      "Bash(grep -rn \"resetBookloreProgress\\\\|resetBookloreMessage\\\\|resettingBookloreProgress\\\\|supportBookLore\\\\|syncWithBooklore\\\\|bulkResetBooklore\\\\|progressResetBooklore\" F:/kutubxona/ung_library/booklore-ui/src/app --include=*.ts --include=*.html)"
+      "Bash(grep -rn \"resetBookloreProgress\\\\|resetBookloreMessage\\\\|resettingBookloreProgress\\\\|supportBookLore\\\\|syncWithBooklore\\\\|bulkResetBooklore\\\\|progressResetBooklore\" F:/kutubxona/ung_library/booklore-ui/src/app --include=*.ts --include=*.html)",
+      "Bash(mvn compile:*)",
+      "Bash(java -version)",
+      "Bash(./gradlew compileJava)",
+      "Bash(grep -E \"\\\\.\\(ts|html|scss\\)$\")",
+      "Bash(grep -n \"bookState$ \\\\|async\" /f/kutubxona/ung_library/booklore-ui/src/app/features/book/components/book-browser/book-browser.component.html)",
+      "Bash(grep -n \"fetchBooksByEntity\\\\|bookState$\" /f/kutubxona/ung_library/booklore-ui/src/app/features/book/components/book-browser/book-browser.component.ts)",
+      "Bash(grep -n \"bookState$\\\\|async\\\\|books\\\\.\" \"/F/kutubxona/ung_library/booklore-ui/src/app/features/book/components/book-browser/book-browser.component.html\")",
+      "Bash(xargs cat:*)",
+      "Bash(grep:*)",
+      "Bash(./gradlew :booklore-api:compileJava --no-daemon)",
+      "Bash(./gradlew compileJava --no-daemon)",
+      "Bash(docker --version)",
+      "Bash(MSYS_NO_PATHCONV=1 docker compose up -d)"
     ]
   }
 }

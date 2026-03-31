@@ -1,6 +1,8 @@
 package org.booklore.config.security;
 
 import org.booklore.model.dto.BookLoreUser;
+import org.booklore.model.enums.DepartmentRole;
+import org.booklore.repository.DepartmentMemberRepository;
 import org.booklore.repository.ShelfRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -11,6 +13,7 @@ import org.springframework.stereotype.Component;
 public class SecurityUtil {
 
     private final ShelfRepository shelfRepository;
+    private final DepartmentMemberRepository departmentMemberRepository;
 
     private BookLoreUser getCurrentUser() {
         var authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -138,5 +141,20 @@ public class SecurityUtil {
                     .orElse(false);
         }
         return false;
+    }
+
+    public boolean isDepartmentHead(Long departmentId) {
+        var user = getCurrentUser();
+        if (user == null) return false;
+        if (user.getPermissions().isAdmin()) return true;
+        return departmentMemberRepository.existsByDepartmentIdAndUserIdAndRole(
+                departmentId, user.getId(), DepartmentRole.HEAD);
+    }
+
+    public boolean canAccessDepartment(Long departmentId) {
+        var user = getCurrentUser();
+        if (user == null) return false;
+        if (user.getPermissions().isAdmin()) return true;
+        return departmentMemberRepository.existsByDepartmentIdAndUserId(departmentId, user.getId());
     }
 }

@@ -35,8 +35,10 @@ services:
       - MYSQL_DATABASE=booklore
       - MYSQL_USER=booklore
       - MYSQL_PASSWORD=booklore
+    ports:
+      - "3306:3306"
     volumes:
-      - mariadb_data:/var/lib/mysql
+        - mariadb_data:/var/lib/mysql
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "mariadb-admin", "ping", "-h", "localhost", "-uroot", "-pbooklore"]

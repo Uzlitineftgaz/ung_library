@@ -7,6 +7,7 @@ import org.booklore.repository.projection.BookCoverUpdateProjection;
 import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.*;
+
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
@@ -186,6 +187,25 @@ public interface BookRepository extends JpaRepository<BookEntity, Long>, JpaSpec
 
     @Query("SELECT COUNT(b) FROM BookEntity b WHERE b.library.id = :libraryId AND (b.deleted IS NULL OR b.deleted = false)")
     long countByLibraryId(@Param("libraryId") Long libraryId);
+
+    @Query("""
+            SELECT b.id FROM BookEntity b
+            LEFT JOIN b.metadata m
+            WHERE (b.deleted IS NULL OR b.deleted = false)
+              AND m.goodreadsRating IS NOT NULL
+            ORDER BY m.goodreadsRating DESC
+            """)
+    List<Long> findBookIdsSortedByGoodreadsRating(Pageable pageable);
+
+    @Query("""
+            SELECT b.id FROM BookEntity b
+            LEFT JOIN b.metadata m
+            WHERE b.library.id IN :libraryIds
+              AND (b.deleted IS NULL OR b.deleted = false)
+              AND m.goodreadsRating IS NOT NULL
+            ORDER BY m.goodreadsRating DESC
+            """)
+    List<Long> findBookIdsSortedByGoodreadsRatingByLibraryIds(@Param("libraryIds") Collection<Long> libraryIds, Pageable pageable);
 
     @Query("""
             SELECT b FROM BookEntity b

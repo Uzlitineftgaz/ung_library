@@ -45,6 +45,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import org.booklore.model.enums.AuditAction;
 import org.booklore.service.audit.AuditService;
+import org.springframework.data.domain.PageRequest;
 
 @Slf4j
 @AllArgsConstructor
@@ -163,6 +164,101 @@ public class BookService {
         return book;
     }
 
+    public List<Book> getBooksByLibraryId(Long libraryId) {
+        BookLoreUser user = authenticationService.getAuthenticatedUser();
+        boolean isAdmin = user.getPermissions().isAdmin();
+
+        if (!isAdmin) {
+            Set<Long> userLibraryIds = getUserLibraryIds(user);
+            if (!userLibraryIds.contains(libraryId)) {
+                throw ApiError.FORBIDDEN.createException("Access denied to library: " + libraryId);
+            }
+        }
+
+        List<BookEntity> books = bookRepository.findAllWithMetadataByLibraryId(libraryId);
+        List<Book> bookDtos = bookQueryService.mapEntitiesToDto(books, false, user.getId());
+
+        Set<Long> bookIds = bookDtos.stream().map(Book::getId).collect(Collectors.toSet());
+        Map<Long, UserBookProgressEntity> progressMap = readingProgressService.fetchUserProgress(user.getId(), bookIds);
+        Map<Long, UserBookFileProgressEntity> fileProgressMap = readingProgressService.fetchUserFileProgress(user.getId(), bookIds);
+
+        bookDtos.forEach(book -> readingProgressService.enrichBookWithProgress(
+                book,
+                progressMap.get(book.getId()),
+                fileProgressMap.get(book.getId())
+        ));
+
+        return bookDtos;
+    }
+
+    public List<Book> getRecentlyReadBooks(int limit) {
+        BookLoreUser user = authenticationService.getAuthenticatedUser();
+
+        int safeLimit = Math.min(limit, 6);
+        List<Long> bookIds = userBookProgressRepository.findRecentlyReadBookIdsByUserId(
+                user.getId(), PageRequest.of(0, safeLimit));
+
+        if (bookIds.isEmpty()) {
+            return List.of();
+        }
+
+        List<BookEntity> books = bookQueryService.findAllWithMetadataByIds(new HashSet<>(bookIds));
+        Map<Long, Integer> orderMap = new HashMap<>();
+        for (int i = 0; i < bookIds.size(); i++) {
+            orderMap.put(bookIds.get(i), i);
+        }
+        books.sort(Comparator.comparingInt(b -> orderMap.getOrDefault(b.getId(), Integer.MAX_VALUE)));
+
+        List<Book> bookDtos = bookQueryService.mapEntitiesToDto(books, false, user.getId());
+        Set<Long> idSet = new HashSet<>(bookIds);
+        Map<Long, UserBookProgressEntity> progressMap = readingProgressService.fetchUserProgress(user.getId(), idSet);
+        Map<Long, UserBookFileProgressEntity> fileProgressMap = readingProgressService.fetchUserFileProgress(user.getId(), idSet);
+
+        bookDtos.forEach(book -> readingProgressService.enrichBookWithProgress(
+                book,
+                progressMap.get(book.getId()),
+                fileProgressMap.get(book.getId())
+        ));
+
+        return bookDtos;
+    }
+
+    public List<Book> getBooksSortedByRating(int page, int pageSize) {
+        BookLoreUser user = authenticationService.getAuthenticatedUser();
+        boolean isAdmin = user.getPermissions().isAdmin();
+
+        List<Long> bookIds;
+        if (isAdmin) {
+            bookIds = bookRepository.findBookIdsSortedByGoodreadsRating(PageRequest.of(page, pageSize));
+        } else {
+            Set<Long> libraryIds = getUserLibraryIds(user);
+            bookIds = bookRepository.findBookIdsSortedByGoodreadsRatingByLibraryIds(libraryIds, PageRequest.of(page, pageSize));
+        }
+
+        if (bookIds.isEmpty()) {
+            return List.of();
+        }
+
+        List<BookEntity> books = bookQueryService.findAllWithMetadataByIds(new HashSet<>(bookIds));
+        Map<Long, Integer> orderMap = new HashMap<>();
+        for (int i = 0; i < bookIds.size(); i++) {
+            orderMap.put(bookIds.get(i), i);
+        }
+        books.sort(Comparator.comparingInt(b -> orderMap.getOrDefault(b.getId(), Integer.MAX_VALUE)));
+
+        List<Book> bookDtos = bookQueryService.mapEntitiesToDto(books, false, user.getId());
+        Set<Long> idSet = new HashSet<>(bookIds);
+        Map<Long, UserBookProgressEntity> progressMap = readingProgressService.fetchUserProgress(user.getId(), idSet);
+        Map<Long, UserBookFileProgressEntity> fileProgressMap = readingProgressService.fetchUserFileProgress(user.getId(), idSet);
+
+        bookDtos.forEach(book -> readingProgressService.enrichBookWithProgress(
+                book,
+                progressMap.get(book.getId()),
+                fileProgressMap.get(book.getId())
+        ));
+
+        return bookDtos;
+    }
 
     public BookViewerSettings getBookViewerSetting(long bookId, long bookFileId) {
         BookEntity bookEntity = bookRepository.findByIdWithBookFiles(bookId).orElseThrow(() -> ApiError.BOOK_NOT_FOUND.createException(bookId));
